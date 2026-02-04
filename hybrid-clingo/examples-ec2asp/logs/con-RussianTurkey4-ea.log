@@ -1,0 +1,69 @@
+$ python ../hec-incr.py --con ./RussianTurkey4-ea.lp
+
+
+Looking for the right number of steps: 1 2 3 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.048s)
+maxStep(3)
+happens(load,1)
+happens(shoot,3)
+happens(spin,2)
+holdsAt(alive,(0<T=<1))
+holdsAt(alive,(1<T=<2))
+holdsAt(alive,(2<T=<3))
+holdsAt(loaded,(1<T=<2))
+holdsAt(loaded,(2<T=<3))
+releasedAt(loaded,(2<T=<3))
+-holdsAt(alive,(3<T=<4))
+-holdsAt(loaded,(0<T=<1))
+-holdsAt(loaded,(3<T=<4))
+-releasedAt(alive,(0<T=<1))
+-releasedAt(alive,(1<T=<2))
+-releasedAt(alive,(2<T=<3))
+-releasedAt(alive,(3<T=<4))
+-releasedAt(loaded,(0<T=<1))
+-releasedAt(loaded,(1<T=<2))
+-releasedAt(loaded,(3<T=<4))
+Assignment:
+(time,0)=1 (time,1)=2 (time,2)=3 (time,3)=4
+Answer: 2 (Time: 0.049s)
+maxStep(3)
+happens(load,1)
+happens(shoot,3)
+happens(spin,2)
+holdsAt(alive,(0<T=<1))
+holdsAt(alive,(1<T=<2))
+holdsAt(alive,(2<T=<3))
+holdsAt(alive,(3<T=<4))
+holdsAt(loaded,(1<T=<2))
+releasedAt(loaded,(2<T=<3))
+-holdsAt(loaded,(0<T=<1))
+-holdsAt(loaded,(2<T=<3))
+-holdsAt(loaded,(3<T=<4))
+-releasedAt(alive,(0<T=<1))
+-releasedAt(alive,(1<T=<2))
+-releasedAt(alive,(2<T=<3))
+-releasedAt(alive,(3<T=<4))
+-releasedAt(loaded,(0<T=<1))
+-releasedAt(loaded,(1<T=<2))
+-releasedAt(loaded,(3<T=<4))
+Assignment:
+(time,0)=1 (time,1)=2 (time,2)=3 (time,3)=4
+SATISFIABLE
+
+Models       : 2
+Calls        : 1
+Time         : 0.049s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.026s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.55
+  real [s]  0.55
+  user [s]  0.28
+  sys  [s]  0.12
+  mem  [KB] 20992
+  avgm [KB] 0

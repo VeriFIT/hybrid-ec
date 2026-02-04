@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.023s)
+happens(start,10) happens(close2,20) holdsAt(blocked1,11) holdsAt(blocked2,21) holdsAt(blocked1,12) holdsAt(blocked1,13) holdsAt(blocked1,14) holdsAt(blocked1,15) holdsAt(blocked1,16) holdsAt(blocked1,17) holdsAt(blocked1,18) holdsAt(blocked1,19) holdsAt(blocked1,20) holdsAt(blocked1,20) holdsAt(blocked1,21) holdsAt(blocked1,22) holdsAt(blocked1,23) holdsAt(blocked1,24) holdsAt(blocked1,25) holdsAt(blocked1,26) holdsAt(blocked1,27) holdsAt(blocked1,28) holdsAt(blocked1,29) holdsAt(blocked1,30) holdsAt(blocked1,31) holdsAt(blocked1,32) holdsAt(blocked1,33) holdsAt(blocked1,34) holdsAt(blocked1,35) holdsAt(blocked1,36) holdsAt(blocked1,37) holdsAt(blocked1,38) holdsAt(blocked1,39) holdsAt(blocked1,40) holdsAt(blocked1,40) holdsAt(blocked2,22) holdsAt(blocked2,23) holdsAt(blocked2,24) holdsAt(blocked2,25) holdsAt(blocked2,26) holdsAt(blocked2,27) holdsAt(blocked2,28) holdsAt(blocked2,29) holdsAt(blocked2,30) holdsAt(blocked2,31) holdsAt(blocked2,32) holdsAt(blocked2,33) holdsAt(blocked2,34) holdsAt(blocked2,35) holdsAt(blocked2,36) holdsAt(blocked2,37) holdsAt(blocked2,38) holdsAt(blocked2,39) holdsAt(blocked2,40) holdsAt(blocked2,40) holdsAt(stuffy,21) holdsAt(stuffy,22) holdsAt(stuffy,23) holdsAt(stuffy,24) holdsAt(stuffy,25) holdsAt(stuffy,26) holdsAt(stuffy,27) holdsAt(stuffy,28) holdsAt(stuffy,29) holdsAt(stuffy,30) holdsAt(stuffy,31) holdsAt(stuffy,32) holdsAt(stuffy,33) holdsAt(stuffy,34) holdsAt(stuffy,35) holdsAt(stuffy,36) holdsAt(stuffy,37) holdsAt(stuffy,38) holdsAt(stuffy,39) holdsAt(stuffy,40) holdsAt(stuffy,40)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.024s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.009s

@@ -1,0 +1,23 @@
+$ clingo -c maxtime=50 -n 0 ../axioms/dec_clingo.lp ../axioms/dec_clingo-show.lp ./model.lp
+
+
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.553s)
+happens(turn_light_on,10) happens(turn_light_off,45) holdsAt(light_on,45) holdsAt(brightness(0),0) holdsAt(brightness(0),50) holdsAt(fading_out,45) holdsAt(brightness(0),10) holdsAt(brightness(5),45) happens(fade_out_end,30) happens(fade_in_end,40) happens(fade_in_end,20) holdsAt(light_on,40) holdsAt(fading_in,40) holdsAt(brightness(10),40) holdsAt(light_on,30) holdsAt(fading_out,30) holdsAt(brightness(0),30) holdsAt(light_on,20) holdsAt(fading_in,20) holdsAt(brightness(10),20)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.554s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.532s
+
+Command exited with non-zero status 30
+
+  real      0:00.57
+  real [s]  0.57
+  user [s]  0.48
+  sys  [s]  0.05
+  mem  [KB] 25636
+  avgm [KB] 0

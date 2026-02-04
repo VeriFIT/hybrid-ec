@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.026s)
+happens(tapOn,0) holdsAt(height(0),0) holdsAt(filling,1) holdsAt(height(1),1) holdsAt(height(0),0) holdsAt(filling,2) holdsAt(height(2),2) holdsAt(filling,3) holdsAt(height(3),3) holdsAt(spilling,4) holdsAt(height(3),4) holdsAt(spilling,5) holdsAt(height(3),5) happens(overflow,3) holdsAt(spilling,5) holdsAt(height(3),5) holdsAt(filling,3) holdsAt(height(3),3)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.027s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.009s

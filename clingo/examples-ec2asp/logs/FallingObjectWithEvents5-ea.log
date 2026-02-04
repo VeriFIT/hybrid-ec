@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.024s)
+happens(drop(nathan,apple),0) holdsAt(height(apple,3),0) holdsAt(falling(apple),1) holdsAt(height(apple,2),1) holdsAt(height(apple,3),0) holdsAt(falling(apple),2) holdsAt(falling(apple),3) holdsAt(height(apple,0),3) holdsAt(height(apple,0),4) holdsAt(height(apple,0),5) holdsAt(height(apple,1),2) happens(hitGround(apple),3) holdsAt(height(apple,0),5) holdsAt(falling(apple),3) holdsAt(height(apple,0),3)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.025s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.008s

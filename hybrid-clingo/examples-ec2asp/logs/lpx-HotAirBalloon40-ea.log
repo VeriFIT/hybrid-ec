@@ -1,0 +1,33 @@
+$ python ../hec-incr.py ./HotAirBalloon40-ea.lp
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.060s)
+fholdsAtC(height(balloon)=(0->20),(0<T=<20),eq((((1,0),),1)))
+fholdsAtC(height(balloon)=(20->0),(20<T=<40),eq((((1,20),),-1)))
+happens(turnOffHeater(nathan,balloon),20)
+happens(turnOnHeater(nathan,balloon),0)
+holdsAt(heaterOn(balloon),(0<T=<20))
+maxStep(2)
+releasedAt(height(balloon),(0<T=<20))
+releasedAt(height(balloon),(20<T=<40))
+Assignment:
+(height(balloon),0)=0 (height(balloon),1)=20 (height(balloon),2)=0 (time,0)=0 (time,1)=20 (time,2)=40
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.060s   (Solving: 0.000s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.020s
+
+
+
+  real      0:00.45
+  real [s]  0.45
+  user [s]  0.20
+  sys  [s]  0.11
+  mem  [KB] 28596
+  avgm [KB] 0

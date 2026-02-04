@@ -1,0 +1,34 @@
+$ python ../hec-incr.py ./model.lp --maxtime 1000
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.054s)
+fholdsAt(balance(account1)=10,(0<T=<10))
+fholdsAt(balance(account1)=8,(10<T=<20))
+fholdsAt(balance(account1)=4,(20<T=<1000))
+fholdsAt(balance(account2)=10,(0<T=<10))
+fholdsAt(balance(account2)=12,(10<T=<20))
+fholdsAt(balance(account2)=16,(20<T=<1000))
+happens(transfer(account1,account2,2),10)
+happens(transfer(account1,account2,4),20)
+maxStep(2)
+Assignment:
+(balance(account1),0)=10 (balance(account1),1)=8 (balance(account1),2)=4 (balance(account2),0)=10 (balance(account2),1)=12 (balance(account2),2)=16 (time,0)=10 (time,1)=20 (time,2)=1000
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.054s   (Solving: 0.000s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.018s
+
+
+
+  real      0:00.41
+  real [s]  0.41
+  user [s]  0.19
+  sys  [s]  0.09
+  mem  [KB] 28628
+  avgm [KB] 0

@@ -1,0 +1,23 @@
+$ clingo -c maxtime=50 -n 0 ../axioms/dec_clingo.lp ../axioms/dec_clingo-show.lp ./model-effect_constr.lp
+
+
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.042s)
+happens(pickUp(nathan,book),10) happens(walk(nathan,100),20) happens(letGoOf(nathan,book),30) happens(walk(nathan,200),40) holdsAt(location(nathan,100),30) holdsAt(location(nathan,100),40) holdsAt(location(nathan,200),50) holdsAt(location(nathan,0),0) holdsAt(location(book,0),0) holdsAt(location(nathan,0),10) holdsAt(location(nathan,0),20) holdsAt(location(book,0),10) holdsAt(location(book,0),20) holdsAt(location(book,100),30) holdsAt(location(book,100),40) holdsAt(location(book,100),50) holdsAt(holding(nathan,book),20) holdsAt(holding(nathan,book),30)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.044s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.029s
+
+Command exited with non-zero status 30
+
+  real      0:00.05
+  real [s]  0.05
+  user [s]  0.02
+  sys  [s]  0.01
+  mem  [KB] 12544
+  avgm [KB] 0

@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.021s)
+happens(start,0) happens(close2,1) holdsAt(blocked1,1) holdsAt(blocked2,2) holdsAt(blocked1,2) holdsAt(blocked1,2) holdsAt(stuffy,2) holdsAt(stuffy,2) holdsAt(blocked2,2) holdsAt(blocked1,1)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.021s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.006s

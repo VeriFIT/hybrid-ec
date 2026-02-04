@@ -1,0 +1,9 @@
+name: clingcon
+channels:
+  - defaults
+  - conda-forge
+  - potassco/label/dev
+dependencies:
+  - python=3.8
+  - clingcon
+

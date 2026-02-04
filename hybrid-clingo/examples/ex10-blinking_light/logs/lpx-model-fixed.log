@@ -1,0 +1,34 @@
+$ python ../hec-incr.py --maxtime 15 ./model-fixed.lp
+
+
+Looking for the right number of steps: 1 2 3 4 5 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.051s)
+happens(turn_light_off,111/10)
+happens(turn_light_off,133/10)
+happens(turn_light_on,10)
+happens(turn_light_on,61/5)
+happens(turn_light_on,72/5)
+holdsAt(light_on,(10<T=<111/10))
+holdsAt(light_on,(61/5<T=<133/10))
+holdsAt(light_on,(72/5<T=<15))
+maxStep(5)
+Assignment:
+(time,0)=10 (time,1)=111/10 (time,2)=61/5 (time,3)=133/10 (time,4)=72/5 (time,5)=15 (timeDiff,0,0)=0 (timeDiff,0,1)=11/10 (timeDiff,0,2)=11/5 (timeDiff,0,3)=33/10 (timeDiff,0,4)=22/5 (timeDiff,0,5)=5 (timeDiff,1,1)=0 (timeDiff,1,2)=11/10 (timeDiff,1,3)=11/5 (timeDiff,1,4)=33/10 (timeDiff,1,5)=39/10 (timeDiff,2,2)=0 (timeDiff,2,3)=11/10 (timeDiff,2,4)=11/5 (timeDiff,2,5)=14/5 (timeDiff,3,3)=0 (timeDiff,3,4)=11/10 (timeDiff,3,5)=17/10 (timeDiff,4,4)=0 (timeDiff,4,5)=3/5 (timeDiff,5,5)=0
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.051s   (Solving: 0.001s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.020s
+
+
+
+  real      0:00.90
+  real [s]  0.90
+  user [s]  0.43
+  sys  [s]  0.20
+  mem  [KB] 28672
+  avgm [KB] 0

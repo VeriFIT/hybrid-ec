@@ -1,0 +1,13 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.024s)
+happens(load,1) happens(spin,2) happens(shoot,3) holdsAt(alive,0) holdsAt(loaded,2) holdsAt(alive,0) holdsAt(loaded,2) holdsAt(loaded,3) holdsAt(loaded,3) holdsAt(alive,1) holdsAt(alive,1) holdsAt(alive,2) holdsAt(alive,2) holdsAt(alive,3) holdsAt(alive,3)
+Answer: 2 (Time: 0.025s)
+happens(load,1) happens(spin,2) happens(shoot,3) holdsAt(alive,0) holdsAt(loaded,2) holdsAt(alive,0) holdsAt(loaded,2) holdsAt(alive,1) holdsAt(alive,1) holdsAt(alive,2) holdsAt(alive,2) holdsAt(alive,3) holdsAt(alive,3) holdsAt(alive,4) holdsAt(alive,4)
+SATISFIABLE
+
+Models       : 2
+Calls        : 1
+Time         : 0.026s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.007s

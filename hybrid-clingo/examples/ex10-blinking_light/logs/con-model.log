@@ -1,0 +1,30 @@
+$ python ../hec-incr.py --maxtime 1000 --con ./model.lp --no_last_step --project
+
+
+Looking for the right number of steps: 1 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.044s)
+maxStep(1)
+happens(turn_light_off,11)
+happens(turn_light_on,10)
+holdsAt(light_on,(10<T=<11))
+Assignment:
+(time,0)=10 (time,1)=11
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.045s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.023s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.23
+  real [s]  0.23
+  user [s]  0.13
+  sys  [s]  0.05
+  mem  [KB] 20984
+  avgm [KB] 0

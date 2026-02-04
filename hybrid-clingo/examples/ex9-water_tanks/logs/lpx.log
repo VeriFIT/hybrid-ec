@@ -1,0 +1,52 @@
+$ python ../hec-incr.py --maxtime 19 ./model.lp
+
+
+Looking for the right number of steps: 1 2 3 4 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.053s)
+fholdsAt(water_left=100,(0<T=<10))
+fholdsAt(water_right=100,(0<T=<10))
+fholdsAtC(water_left=(100->50),(10<T=<25/2),eq((((1,100),),-20)))
+fholdsAtC(water_left=(50->175/2),(25/2<T=<65/4),eq((((1,50),),10)))
+fholdsAtC(water_left=(175/2->50),(65/4<T=<145/8),eq((((1,175/2),),-20)))
+fholdsAtC(water_left=(50->235/4),(145/8<T=<19),eq((((1,50),),10)))
+fholdsAtC(water_right=(100->125),(10<T=<25/2),eq((((1,100),),10)))
+fholdsAtC(water_right=(125->50),(25/2<T=<65/4),eq((((1,125),),-20)))
+fholdsAtC(water_right=(50->275/4),(65/4<T=<145/8),eq((((1,50),),10)))
+fholdsAtC(water_right=(275/4->205/4),(145/8<T=<19),eq((((1,275/4),),-20)))
+happens(start(right),10)
+happens(switch_left,25/2)
+happens(switch_left,145/8)
+happens(switch_right,65/4)
+holdsAt(left_filling,(25/2<T=<65/4))
+holdsAt(left_filling,(145/8<T=<19))
+holdsAt(right_filling,(10<T=<25/2))
+holdsAt(right_filling,(65/4<T=<145/8))
+maxStep(4)
+releasedAt(water_left,(10<T=<25/2))
+releasedAt(water_left,(25/2<T=<65/4))
+releasedAt(water_left,(65/4<T=<145/8))
+releasedAt(water_left,(145/8<T=<19))
+releasedAt(water_right,(10<T=<25/2))
+releasedAt(water_right,(25/2<T=<65/4))
+releasedAt(water_right,(65/4<T=<145/8))
+releasedAt(water_right,(145/8<T=<19))
+Assignment:
+(time,0)=10 (time,1)=25/2 (time,2)=65/4 (time,3)=145/8 (time,4)=19 (water_left,0)=100 (water_left,1)=50 (water_left,2)=175/2 (water_left,3)=50 (water_left,4)=235/4 (water_right,0)=100 (water_right,1)=125 (water_right,2)=50 (water_right,3)=275/4 (water_right,4)=205/4
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.053s   (Solving: 0.001s 1st Model: 0.001s Unsat: 0.000s)
+CPU Time     : 0.022s
+
+
+
+  real      0:00.77
+  real [s]  0.77
+  user [s]  0.35
+  sys  [s]  0.18
+  mem  [KB] 28788
+  avgm [KB] 0

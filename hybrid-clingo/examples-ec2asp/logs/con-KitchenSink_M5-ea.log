@@ -1,0 +1,34 @@
+$ python ../hec-incr.py --con ./KitchenSink_M5-ea.lp
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.051s)
+maxStep(2)
+happens(overflow,4)
+happens(tapOn,0)
+holdsAt(filling,(0<T=<4))
+holdsAt(spilling,(4<T=<5))
+releasedAt(height,(0<T=<4))
+fholdsAt(height=4,(4<T=<5))
+fholdsAtC(height=(0->4),(0<T=<4),eq((((1,0),),1)))
+Assignment:
+(height,0)=0 (height,1)=4 (height,2)=4 (time,0)=0 (time,1)=4 (time,2)=5
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.052s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.027s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.40
+  real [s]  0.40
+  user [s]  0.21
+  sys  [s]  0.07
+  mem  [KB] 20860
+  avgm [KB] 0

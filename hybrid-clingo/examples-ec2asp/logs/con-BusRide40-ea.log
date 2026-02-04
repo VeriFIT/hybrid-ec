@@ -1,0 +1,33 @@
+$ python ../hec-incr.py --con ./BusRide40-ea.lp
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.052s)
+maxStep(2)
+happens(board,35)
+happens(boardRed,35)
+happens(buy,24)
+holdsAt(hasTicket,(24<T=<35))
+holdsAt(hasTicket,(35<T=<40))
+holdsAt(onRed,(35<T=<40))
+Assignment:
+(time,0)=24 (time,1)=35 (time,2)=40
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.052s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.026s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.41
+  real [s]  0.41
+  user [s]  0.24
+  sys  [s]  0.06
+  mem  [KB] 20992
+  avgm [KB] 0

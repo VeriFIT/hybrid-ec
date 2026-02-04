@@ -1,0 +1,35 @@
+$ python ../hec-incr.py ./StuffyRoom40-ea.lp
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.047s)
+happens(close2,20)
+happens(start,10)
+holdsAt(blocked1,(10<T=<20))
+holdsAt(blocked1,(20<T=<40))
+holdsAt(blocked2,(20<T=<40))
+holdsAt(stuffy,(20<T=<40))
+maxStep(2)
+releasedAt(stuffy,(10<T=<20))
+releasedAt(stuffy,(20<T=<40))
+releasedAt(stuffy,(0<T=<10))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=40
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.047s   (Solving: 0.001s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.017s
+
+
+
+  real      0:00.41
+  real [s]  0.41
+  user [s]  0.21
+  sys  [s]  0.07
+  mem  [KB] 28544
+  avgm [KB] 0

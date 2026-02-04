@@ -1,0 +1,34 @@
+$ python ../hec-incr.py --maxtime 1000 --con -c paramHeight=4 ./model.lp
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.051s)
+maxStep(2)
+happens(hitGround(apple),12)
+happens(drop(nathan,apple),10)
+holdsAt(falling(apple),(10<T=<12))
+releasedAt(height(apple),(10<T=<12))
+fholdsAt(height(apple)=4,(0<T=<10))
+fholdsAt(height(apple)=0,(12<T=<1000))
+fholdsAtC(height(apple)=(4->0),(10<T=<12),eq((((1,4),),-2)))
+Assignment:
+(time,0)=10 (time,1)=12 (time,2)=1000 (height(apple),0)=4 (height(apple),1)=0 (height(apple),2)=0
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.051s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.026s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.40
+  real [s]  0.40
+  user [s]  0.21
+  sys  [s]  0.08
+  mem  [KB] 20992
+  avgm [KB] 0

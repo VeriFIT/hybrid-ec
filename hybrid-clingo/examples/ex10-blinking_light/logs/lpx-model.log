@@ -1,0 +1,29 @@
+$ python ../hec-incr.py --maxtime 1000 ./model.lp --no_last_step
+
+
+Looking for the right number of steps: 1 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.046s)
+happens(turn_light_off,10+e)
+happens(turn_light_on,10)
+holdsAt(light_on,(10<T=<10+e))
+maxStep(1)
+Assignment:
+(time,0)=10 (time,1)=10+e
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.046s   (Solving: 0.000s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.015s
+
+
+
+  real      0:00.24
+  real [s]  0.24
+  user [s]  0.13
+  sys  [s]  0.04
+  mem  [KB] 28412
+  avgm [KB] 0

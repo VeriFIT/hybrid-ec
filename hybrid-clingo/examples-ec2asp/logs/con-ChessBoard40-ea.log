@@ -1,0 +1,64 @@
+$ python ../hec-incr.py --con ./ChessBoard40-ea.lp
+
+
+Looking for the right number of steps: 1 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.042s)
+maxStep(1)
+happens(throw,35)
+holdsAt(itsBlack,(35<T=<40))
+holdsAt(itsWhite,(0<T=<35))
+holdsAt(itsWhite,(35<T=<40))
+holdsAt(onWhite,(35<T=<40))
+releasedAt(itsBlack,(0<T=<35))
+releasedAt(itsBlack,(35<T=<40))
+releasedAt(itsWhite,(0<T=<35))
+releasedAt(itsWhite,(35<T=<40))
+Assignment:
+(time,0)=35 (time,1)=40
+Answer: 2 (Time: 0.042s)
+maxStep(1)
+happens(throw,35)
+holdsAt(itsBlack,(0<T=<35))
+holdsAt(itsBlack,(35<T=<40))
+holdsAt(itsWhite,(35<T=<40))
+holdsAt(onBlack,(35<T=<40))
+releasedAt(itsBlack,(0<T=<35))
+releasedAt(itsBlack,(35<T=<40))
+releasedAt(itsWhite,(0<T=<35))
+releasedAt(itsWhite,(35<T=<40))
+Assignment:
+(time,0)=35 (time,1)=40
+Answer: 3 (Time: 0.043s)
+maxStep(1)
+happens(throw,35)
+holdsAt(itsBlack,(0<T=<35))
+holdsAt(itsBlack,(35<T=<40))
+holdsAt(itsWhite,(0<T=<35))
+holdsAt(itsWhite,(35<T=<40))
+holdsAt(onBlack,(35<T=<40))
+holdsAt(onWhite,(35<T=<40))
+releasedAt(itsBlack,(0<T=<35))
+releasedAt(itsBlack,(35<T=<40))
+releasedAt(itsWhite,(0<T=<35))
+releasedAt(itsWhite,(35<T=<40))
+Assignment:
+(time,0)=35 (time,1)=40
+SATISFIABLE
+
+Models       : 3
+Calls        : 1
+Time         : 0.043s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.024s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.23
+  real [s]  0.23
+  user [s]  0.13
+  sys  [s]  0.04
+  mem  [KB] 20736
+  avgm [KB] 0

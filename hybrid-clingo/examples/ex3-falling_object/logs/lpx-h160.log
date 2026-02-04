@@ -1,0 +1,33 @@
+$ python ../hec-incr.py --maxtime 1000 -c paramHeight=160 ./model.lp
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.057s)
+fholdsAt(height(apple)=160,(0<T=<10))
+fholdsAt(height(apple)=0,(90<T=<1000))
+fholdsAtC(height(apple)=(160->0),(10<T=<90),eq((((1,160),),-2)))
+happens(drop(nathan,apple),10)
+happens(hitGround(apple),90)
+holdsAt(falling(apple),(10<T=<90))
+maxStep(2)
+releasedAt(height(apple),(10<T=<90))
+Assignment:
+(height(apple),0)=160 (height(apple),1)=0 (height(apple),2)=0 (time,0)=10 (time,1)=90 (time,2)=1000
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.057s   (Solving: 0.000s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.019s
+
+
+
+  real      0:00.45
+  real [s]  0.45
+  user [s]  0.21
+  sys  [s]  0.09
+  mem  [KB] 28476
+  avgm [KB] 0

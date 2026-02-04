@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 1.049s)
+happens(tapOn,10) holdsAt(height(0),0) holdsAt(filling,11) holdsAt(height(0),0) holdsAt(filling,12) holdsAt(filling,13) holdsAt(filling,14) holdsAt(filling,15) holdsAt(filling,16) holdsAt(filling,17) holdsAt(filling,18) holdsAt(filling,19) holdsAt(filling,20) holdsAt(filling,21) holdsAt(filling,22) holdsAt(filling,23) holdsAt(filling,24) holdsAt(filling,25) holdsAt(filling,26) holdsAt(filling,27) holdsAt(filling,28) holdsAt(filling,29) holdsAt(filling,30) holdsAt(filling,31) holdsAt(filling,32) holdsAt(filling,33) holdsAt(filling,34) holdsAt(filling,35) holdsAt(filling,36) holdsAt(filling,37) holdsAt(filling,38) holdsAt(filling,39) holdsAt(filling,40) holdsAt(height(0),1) holdsAt(height(0),2) holdsAt(height(0),3) holdsAt(height(0),4) holdsAt(height(0),5) holdsAt(height(0),6) holdsAt(height(0),7) holdsAt(height(0),8) holdsAt(height(0),9) holdsAt(height(0),10) holdsAt(height(0),10) holdsAt(height(1),11) holdsAt(height(2),12) holdsAt(height(3),13) holdsAt(height(4),14) holdsAt(height(5),15) holdsAt(height(6),16) holdsAt(height(7),17) holdsAt(height(8),18) holdsAt(height(9),19) holdsAt(height(10),20) holdsAt(height(11),21) holdsAt(height(12),22) holdsAt(height(13),23) holdsAt(height(14),24) holdsAt(height(15),25) holdsAt(height(16),26) holdsAt(height(17),27) holdsAt(height(18),28) holdsAt(height(19),29) holdsAt(height(20),30) holdsAt(height(21),31) holdsAt(height(22),32) holdsAt(height(23),33) holdsAt(height(24),34) holdsAt(height(25),35) holdsAt(height(26),36) holdsAt(height(27),37) holdsAt(height(28),38) holdsAt(height(29),39) holdsAt(height(30),40) happens(overflow,40) holdsAt(filling,40) holdsAt(height(30),40)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 1.050s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 1.034s

@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.103s)
+happens(close1,25) holdsAt(switch2,0) holdsAt(switch3,0) holdsAt(switch1,26) holdsAt(switch1,27) holdsAt(switch1,28) holdsAt(switch1,29) holdsAt(switch1,30) holdsAt(switch1,31) holdsAt(switch1,32) holdsAt(switch1,33) holdsAt(switch1,34) holdsAt(switch1,35) holdsAt(switch1,36) holdsAt(switch1,37) holdsAt(switch1,38) holdsAt(switch1,39) holdsAt(switch1,40) holdsAt(switch2,0) holdsAt(switch3,0) holdsAt(switch1,40) holdsAt(switch2,1) holdsAt(switch2,2) holdsAt(switch2,3) holdsAt(switch2,4) holdsAt(switch2,5) holdsAt(switch2,6) holdsAt(switch2,7) holdsAt(switch2,8) holdsAt(switch2,9) holdsAt(switch2,10) holdsAt(switch2,11) holdsAt(switch2,12) holdsAt(switch2,13) holdsAt(switch2,14) holdsAt(switch2,15) holdsAt(switch2,16) holdsAt(switch2,17) holdsAt(switch2,18) holdsAt(switch2,19) holdsAt(switch2,20) holdsAt(switch2,21) holdsAt(switch2,22) holdsAt(switch2,23) holdsAt(switch2,24) holdsAt(switch2,25) holdsAt(switch2,25) holdsAt(switch3,1) holdsAt(switch3,2) holdsAt(switch3,3) holdsAt(switch3,4) holdsAt(switch3,5) holdsAt(switch3,6) holdsAt(switch3,7) holdsAt(switch3,8) holdsAt(switch3,9) holdsAt(switch3,10) holdsAt(switch3,11) holdsAt(switch3,12) holdsAt(switch3,13) holdsAt(switch3,14) holdsAt(switch3,15) holdsAt(switch3,16) holdsAt(switch3,17) holdsAt(switch3,18) holdsAt(switch3,19) holdsAt(switch3,20) holdsAt(switch3,21) holdsAt(switch3,22) holdsAt(switch3,23) holdsAt(switch3,24) holdsAt(switch3,25) holdsAt(switch3,25) holdsAt(switch3,26) holdsAt(switch3,27) holdsAt(switch3,28) holdsAt(switch3,29) holdsAt(switch3,30) holdsAt(switch3,31) holdsAt(switch3,32) holdsAt(switch3,33) holdsAt(switch3,34) holdsAt(switch3,35) holdsAt(switch3,36) holdsAt(switch3,37) holdsAt(switch3,38) holdsAt(switch3,39) holdsAt(switch3,40) holdsAt(relay,26) holdsAt(relay,27) holdsAt(relay,28) holdsAt(relay,29) holdsAt(relay,30) holdsAt(relay,31) holdsAt(relay,32) holdsAt(relay,33) holdsAt(relay,34) holdsAt(relay,35) holdsAt(relay,36) holdsAt(relay,37) holdsAt(relay,38) holdsAt(relay,39) holdsAt(relay,40) happens(closeRelay,25) happens(open2,25) holdsAt(switch3,40) holdsAt(relay,40)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.104s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.080s

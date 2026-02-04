@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.025s)
+happens(feed(fred),25) holdsAt(hungry(fred),0) holdsAt(hungry(fred),0) holdsAt(happy(fred),26) holdsAt(happy(fred),27) holdsAt(happy(fred),28) holdsAt(happy(fred),29) holdsAt(happy(fred),30) holdsAt(happy(fred),31) holdsAt(happy(fred),32) holdsAt(happy(fred),33) holdsAt(happy(fred),34) holdsAt(happy(fred),35) holdsAt(happy(fred),36) holdsAt(happy(fred),37) holdsAt(happy(fred),38) holdsAt(happy(fred),39) holdsAt(happy(fred),40) holdsAt(happy(fred),40) holdsAt(hungry(fred),1) holdsAt(hungry(fred),2) holdsAt(hungry(fred),3) holdsAt(hungry(fred),4) holdsAt(hungry(fred),5) holdsAt(hungry(fred),6) holdsAt(hungry(fred),7) holdsAt(hungry(fred),8) holdsAt(hungry(fred),9) holdsAt(hungry(fred),10) holdsAt(hungry(fred),11) holdsAt(hungry(fred),12) holdsAt(hungry(fred),13) holdsAt(hungry(fred),14) holdsAt(hungry(fred),15) holdsAt(hungry(fred),16) holdsAt(hungry(fred),17) holdsAt(hungry(fred),18) holdsAt(hungry(fred),19) holdsAt(hungry(fred),20) holdsAt(hungry(fred),21) holdsAt(hungry(fred),22) holdsAt(hungry(fred),23) holdsAt(hungry(fred),24) holdsAt(hungry(fred),25) holdsAt(hungry(fred),25)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.026s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.008s

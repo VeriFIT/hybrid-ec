@@ -1,0 +1,23 @@
+$ clingo -c maxtime=70 -n 0 ../axioms/dec_clingo.lp ../axioms/dec_clingo-show.lp ./model-state_constr-continuous.lp
+
+
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 23.065s)
+happens(pickUp(nathan,book),10) happens(walk(nathan,10),20) happens(check,25) happens(letGoOf(nathan,book),40) happens(walk(nathan,20),50) happens(check,55) holdsAt(location(nathan,0),0) holdsAt(location(book,0),0) holdsAt(location(nathan,0),10) holdsAt(location(book,0),10) holdsAt(location(nathan,0),20) holdsAt(location(book,0),20) holdsAt(holding(nathan,book),20) holdsAt(location(nathan,10),25) holdsAt(location(book,10),25) holdsAt(holding(nathan,book),25) holdsAt(location(nathan,10),40) holdsAt(location(book,10),40) holdsAt(holding(nathan,book),40) holdsAt(location(nathan,10),50) holdsAt(location(book,10),50) holdsAt(location(nathan,20),55) holdsAt(location(book,10),55) happens(arrive(nathan),51) happens(arrive(nathan),21) holdsAt(walkingTo(nathan,20),51) holdsAt(walkingTo(nathan,10),21) holdsAt(location(nathan,20),70) holdsAt(location(book,10),70) holdsAt(location(nathan,20),51) holdsAt(location(book,10),51) holdsAt(location(nathan,10),21) holdsAt(location(book,10),21) holdsAt(holding(nathan,book),21)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 23.076s (Solving: 0.01s 1st Model: 0.00s Unsat: 0.01s)
+CPU Time     : 23.030s
+
+Command exited with non-zero status 30
+
+  real      0:23.69
+  real [s]  23.69
+  user [s]  21.68
+  sys  [s]  1.95
+  mem  [KB] 783332
+  avgm [KB] 0

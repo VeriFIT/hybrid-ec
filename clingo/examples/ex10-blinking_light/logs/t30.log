@@ -1,0 +1,26 @@
+$ clingo -c maxtime=30 -n 0 ../axioms/dec_clingo.lp ../axioms/dec_clingo-show.lp ./model.lp
+
+
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.026s)
+happens(turn_light_on,10) happens(turn_light_off,11) happens(turn_light_on,12) happens(turn_light_off,13) happens(turn_light_off,9) holdsAt(light_on,9) holdsAt(light_on,13) holdsAt(light_on,11) happens(turn_light_on,2) happens(turn_light_on,4) happens(turn_light_on,6) happens(turn_light_on,8) happens(turn_light_on,14) happens(turn_light_on,16) happens(turn_light_on,18) happens(turn_light_on,20) happens(turn_light_on,22) happens(turn_light_on,24) happens(turn_light_on,26) happens(turn_light_on,28) happens(turn_light_on,30) happens(turn_light_off,29) happens(turn_light_off,27) happens(turn_light_off,25) happens(turn_light_off,23) happens(turn_light_off,21) happens(turn_light_off,19) happens(turn_light_off,17) happens(turn_light_off,15) happens(turn_light_off,7) happens(turn_light_off,5) happens(turn_light_off,3) holdsAt(light_on,3) holdsAt(light_on,5) holdsAt(light_on,7) holdsAt(light_on,15) holdsAt(light_on,17) holdsAt(light_on,19) holdsAt(light_on,21) holdsAt(light_on,23) holdsAt(light_on,25) holdsAt(light_on,27) holdsAt(light_on,29)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.027s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.015s
+
+./model.lp:22:21-31: info: atom does not occur in any rule head:
+  ffluent(F)
+
+Command exited with non-zero status 30
+
+  real      0:00.04
+  real [s]  0.04
+  user [s]  0.01
+  sys  [s]  0.01
+  mem  [KB] 10496
+  avgm [KB] 0

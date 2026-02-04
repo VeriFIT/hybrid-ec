@@ -1,0 +1,23 @@
+$ clingo -c maxtime=30 -n 0 ../axioms/dec_clingo.lp ../axioms/dec_clingo-show.lp ./model.lp
+
+
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.069s)
+happens(increment,1) happens(increment,2) happens(reset,3) happens(increment,4) holdsAt(value(0),0) holdsAt(value(0),4) holdsAt(value(1),5) holdsAt(value(1),6) holdsAt(value(1),7) holdsAt(value(1),8) holdsAt(value(1),9) holdsAt(value(1),10) holdsAt(value(1),11) holdsAt(value(1),12) holdsAt(value(1),13) holdsAt(value(1),14) holdsAt(value(1),15) holdsAt(value(1),16) holdsAt(value(1),17) holdsAt(value(1),18) holdsAt(value(1),19) holdsAt(value(1),20) holdsAt(value(1),21) holdsAt(value(1),22) holdsAt(value(1),23) holdsAt(value(1),24) holdsAt(value(1),25) holdsAt(value(1),26) holdsAt(value(1),27) holdsAt(value(1),28) holdsAt(value(1),29) holdsAt(value(1),30) holdsAt(value(1),30) holdsAt(value(0),0) holdsAt(value(0),4) holdsAt(value(0),1) holdsAt(value(0),1) holdsAt(value(1),2) holdsAt(value(1),2) holdsAt(value(2),3) holdsAt(value(2),3)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.069s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.055s
+
+Command exited with non-zero status 30
+
+  real      0:00.08
+  real [s]  0.08
+  user [s]  0.04
+  sys  [s]  0.01
+  mem  [KB] 13696
+  avgm [KB] 0

@@ -1,0 +1,44 @@
+$ python ../hec-incr.py ./model.lp --maxtime 1000
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.052s)
+happens(land,20)
+happens(toss,10)
+holdsAt(up(heads),(10<T=<20))
+holdsAt(up(heads),(20<T=<1000))
+holdsAt(up(heads),(0<T=<10))
+maxStep(2)
+releasedAt(up(heads),(10<T=<20))
+releasedAt(up(tails),(10<T=<20))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=1000
+Answer: 2 (Time: 0.052s)
+happens(land,20)
+happens(toss,10)
+holdsAt(up(heads),(0<T=<10))
+holdsAt(up(tails),(10<T=<20))
+holdsAt(up(tails),(20<T=<1000))
+maxStep(2)
+releasedAt(up(heads),(10<T=<20))
+releasedAt(up(tails),(10<T=<20))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=1000
+SATISFIABLE
+
+Models       : 2
+Calls        : 1
+Time         : 0.052s   (Solving: 0.000s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.020s
+
+
+
+  real      0:00.41
+  real [s]  0.41
+  user [s]  0.21
+  sys  [s]  0.08
+  mem  [KB] 28484
+  avgm [KB] 0

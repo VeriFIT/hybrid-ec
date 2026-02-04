@@ -1,0 +1,36 @@
+$ python ../hec-incr.py --maxtime 15 --con ./model-con-fixed.lp
+
+
+Looking for the right number of steps: 1 2 3 4 5 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.052s)
+maxStep(5)
+happens(turn_light_off,11)
+happens(turn_light_off,13)
+happens(turn_light_off,15)
+happens(turn_light_on,10)
+happens(turn_light_on,12)
+happens(turn_light_on,14)
+holdsAt(light_on,(10<T=<11))
+holdsAt(light_on,(12<T=<13))
+holdsAt(light_on,(14<T=<15))
+Assignment:
+(time,0)=10 (time,1)=11 (time,2)=12 (time,3)=13 (time,4)=14 (time,5)=15 (timeDiff,0,0)=0 (timeDiff,0,1)=1 (timeDiff,0,2)=2 (timeDiff,0,3)=3 (timeDiff,0,4)=4 (timeDiff,0,5)=5 (timeDiff,1,1)=0 (timeDiff,1,2)=1 (timeDiff,1,3)=2 (timeDiff,1,4)=3 (timeDiff,1,5)=4 (timeDiff,2,2)=0 (timeDiff,2,3)=1 (timeDiff,2,4)=2 (timeDiff,2,5)=3 (timeDiff,3,3)=0 (timeDiff,3,4)=1 (timeDiff,3,5)=2 (timeDiff,4,4)=0 (timeDiff,4,5)=1 (timeDiff,5,5)=0
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.053s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.030s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.89
+  real [s]  0.89
+  user [s]  0.49
+  sys  [s]  0.18
+  mem  [KB] 21248
+  avgm [KB] 0

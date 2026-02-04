@@ -1,0 +1,23 @@
+$ clingo -c maxtime=30 -n 0 ../axioms/dec_clingo.lp ../axioms/dec_clingo-show.lp ./model.lp
+
+
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 1.152s)
+happens(turn_on,5) happens(add(5),10) happens(add(100),20) happens(turn_off,25) holdsAt(result(0),10) holdsAt(powered_on,10) holdsAt(powered_on,20) holdsAt(result(5),20) holdsAt(powered_on,25) holdsAt(result(105),25)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 1.153s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 1.139s
+
+Command exited with non-zero status 30
+
+  real      0:01.19
+  real [s]  1.19
+  user [s]  1.04
+  sys  [s]  0.12
+  mem  [KB] 61804
+  avgm [KB] 0

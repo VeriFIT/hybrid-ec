@@ -1,0 +1,50 @@
+$ python ../hec-incr.py --no_axioms ../axioms/hec_dur.lp ../axioms/hec_dur-show.lp ./Commuter15-ea.lp
+
+
+Looking for the right number of steps: 1 2 3 4 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.064s)
+happens(trainTo(southKen),10)
+happens(trainTo(victoria),6)
+happens(walkTo(herneHill),1)
+happens(walkTo(work),12)
+happens3(trainTo(southKen),10,10)
+happens3(trainTo(victoria),6,6)
+happens3(walkTo(herneHill),1,1)
+happens3(goToWork,1,12)
+happens3(walkTo(work),12,12)
+holdsAt(at(herneHill),(1<T=<6))
+holdsAt(at(home),(0<T=<1))
+holdsAt(at(southKen),(10<T=<12))
+holdsAt(at(victoria),(6<T=<10))
+holdsAt(at(work),(12<T=<15))
+holdsAt(train(herneHill,victoria),(1<T=<6))
+holdsAt(train(herneHill,victoria),(6<T=<10))
+holdsAt(train(herneHill,victoria),(10<T=<12))
+holdsAt(train(herneHill,victoria),(12<T=<15))
+holdsAt(train(herneHill,victoria),(0<T=<1))
+holdsAt(train(victoria,southKen),(1<T=<6))
+holdsAt(train(victoria,southKen),(6<T=<10))
+holdsAt(train(victoria,southKen),(10<T=<12))
+holdsAt(train(victoria,southKen),(12<T=<15))
+holdsAt(train(victoria,southKen),(0<T=<1))
+maxStep(4)
+Assignment:
+(time,0)=1 (time,1)=6 (time,2)=10 (time,3)=12 (time,4)=15
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.064s   (Solving: 0.001s 1st Model: 0.001s Unsat: 0.000s)
+CPU Time     : 0.029s
+
+
+
+  real      0:00.75
+  real [s]  0.75
+  user [s]  0.40
+  sys  [s]  0.12
+  mem  [KB] 29292
+  avgm [KB] 0

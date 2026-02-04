@@ -1,0 +1,80 @@
+$ python ../hec-incr.py --maxtime 1000 ./model.lp ./narrative1.lp
+
+
+Looking for the right number of steps: 1 2 3 4 5 6 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.069s)
+fholdsAt(height=10,(0<T=<10))
+fholdsAt(height=1/4,(26<T=<1000))
+fholdsAt(velocity=0,(0<T=<10))
+fholdsAt(velocity=0,(26<T=<1000))
+fholdsAtC(height=(10->0),(10<T=<20),eq((((1,10),),-1)))
+fholdsAtC(height=(0->5/2),(20<T=<45/2),eq((((1,0),),1)))
+fholdsAtC(height=(5/2->0),(45/2<T=<25),eq((((1,5/2),),-1)))
+fholdsAtC(height=(0->5/8),(25<T=<205/8),eq((((1,0),),1)))
+fholdsAtC(height=(5/8->1/4),(205/8<T=<26),eq((((1,5/8),),-1)))
+fholdsAtC(velocity=(0->10),(10<T=<20),eq((((1,0),),1)))
+fholdsAtC(velocity=(10->0),(20<T=<45/2),eq(((("0.25",10),),-1)))
+fholdsAtC(velocity=(0->5/2),(45/2<T=<25),eq((((1,0),),1)))
+fholdsAtC(velocity=(5/2->0),(25<T=<205/8),eq(((("0.25",5/2),),-1)))
+fholdsAtC(velocity=(0->3/8),(205/8<T=<26),eq((((1,0),),1)))
+happens(bounce_up,20)
+happens(bounce_up,25)
+happens(catch,26)
+happens(drop,10)
+happens(fall_down,10)
+happens(fall_down,45/2)
+happens(fall_down,205/8)
+happens(hit_ground,20)
+happens(hit_ground,25)
+happens(reach_apex,45/2)
+happens(reach_apex,205/8)
+holdsAt(constant_fall_rate(1),(0<T=<10))
+holdsAt(constant_fall_rate(1),(10<T=<20))
+holdsAt(constant_fall_rate(1),(20<T=<45/2))
+holdsAt(constant_fall_rate(1),(45/2<T=<25))
+holdsAt(constant_fall_rate(1),(25<T=<205/8))
+holdsAt(constant_fall_rate(1),(205/8<T=<26))
+holdsAt(constant_fall_rate(1),(26<T=<1000))
+holdsAt(falling,(10<T=<20))
+holdsAt(falling,(45/2<T=<25))
+holdsAt(falling,(205/8<T=<26))
+holdsAt(rising,(20<T=<45/2))
+holdsAt(rising,(25<T=<205/8))
+holdsAt(velocity_loss_portion("0.75"),(0<T=<10))
+holdsAt(velocity_loss_portion("0.75"),(10<T=<20))
+holdsAt(velocity_loss_portion("0.75"),(20<T=<45/2))
+holdsAt(velocity_loss_portion("0.75"),(45/2<T=<25))
+holdsAt(velocity_loss_portion("0.75"),(25<T=<205/8))
+holdsAt(velocity_loss_portion("0.75"),(205/8<T=<26))
+holdsAt(velocity_loss_portion("0.75"),(26<T=<1000))
+maxStep(6)
+releasedAt(height,(10<T=<20))
+releasedAt(height,(20<T=<45/2))
+releasedAt(height,(45/2<T=<25))
+releasedAt(height,(25<T=<205/8))
+releasedAt(height,(205/8<T=<26))
+releasedAt(velocity,(10<T=<20))
+releasedAt(velocity,(20<T=<45/2))
+releasedAt(velocity,(45/2<T=<25))
+releasedAt(velocity,(25<T=<205/8))
+releasedAt(velocity,(205/8<T=<26))
+Assignment:
+(height,0)=10 (height,1)=0 (height,2)=5/2 (height,3)=0 (height,4)=5/8 (height,5)=1/4 (height,6)=1/4 (time,0)=10 (time,1)=20 (time,2)=45/2 (time,3)=25 (time,4)=205/8 (time,5)=26 (time,6)=1000 (velocity,0)=0 (velocity,1)=10 (velocity,2)=0 (velocity,3)=5/2 (velocity,4)=0 (velocity,5)=3/8 (velocity,6)=0
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.069s   (Solving: 0.004s 1st Model: 0.003s Unsat: 0.001s)
+CPU Time     : 0.030s
+
+
+
+  real      0:01.13
+  real [s]  1.13
+  user [s]  0.55
+  sys  [s]  0.21
+  mem  [KB] 29184
+  avgm [KB] 0

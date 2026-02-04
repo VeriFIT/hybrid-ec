@@ -1,0 +1,40 @@
+$ python ../hec-incr.py --con ../axioms/causal.lp ./ThielscherCircuit1-ea.lp
+
+
+Looking for the right number of steps: 1 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.059s)
+maxStep(1)
+happens(close1,0)
+happens(closeRelay,0)
+happens(open2,0)
+holdsAt(relay,(0<T=<1))
+holdsAt(switch1,(0<T=<1))
+holdsAt(switch3,(0<T=<1))
+-holdsAt(light,(0<T=<1))
+-holdsAt(switch2,(0<T=<1))
+-releasedAt(light,(0<T=<1))
+-releasedAt(relay,(0<T=<1))
+-releasedAt(switch1,(0<T=<1))
+-releasedAt(switch2,(0<T=<1))
+-releasedAt(switch3,(0<T=<1))
+Assignment:
+(time,0)=0 (time,1)=1
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.059s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.027s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.25
+  real [s]  0.25
+  user [s]  0.14
+  sys  [s]  0.03
+  mem  [KB] 20992
+  avgm [KB] 0

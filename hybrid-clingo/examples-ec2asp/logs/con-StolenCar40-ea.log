@@ -1,0 +1,35 @@
+$ python ../hec-incr.py --con ./StolenCar40-ea.lp  --project
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.042s)
+maxStep(2)
+happens(park,20)
+happens(steal,21)
+holdsAt(carParked,(20<T=<21))
+-holdsAt(carParked,(0<T=<20))
+-holdsAt(carParked,(21<T=<40))
+-releasedAt(carParked,(0<T=<20))
+-releasedAt(carParked,(20<T=<21))
+-releasedAt(carParked,(21<T=<40))
+Assignment:
+(time,0)=20 (time,1)=21 (time,2)=40
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.043s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.023s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.39
+  real [s]  0.39
+  user [s]  0.21
+  sys  [s]  0.08
+  mem  [KB] 20988
+  avgm [KB] 0

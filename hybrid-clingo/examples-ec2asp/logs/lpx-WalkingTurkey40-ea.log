@@ -1,0 +1,39 @@
+$ python ../hec-incr.py ./WalkingTurkey40-ea.lp
+
+
+Looking for the right number of steps: 1 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.045s)
+-holdsAt(alive,(25<T=<40))
+-holdsAt(walking,(25<T=<40))
+-releasedAt(alive,(25<T=<40))
+-releasedAt(alive,(0<T=<25))
+-releasedAt(loaded,(25<T=<40))
+-releasedAt(loaded,(0<T=<25))
+-releasedAt(walking,(25<T=<40))
+-releasedAt(walking,(0<T=<25))
+happens(shoot,25)
+holdsAt(alive,(0<T=<25))
+holdsAt(loaded,(25<T=<40))
+holdsAt(loaded,(0<T=<25))
+holdsAt(walking,(0<T=<25))
+maxStep(1)
+Assignment:
+(time,0)=25 (time,1)=40
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.045s   (Solving: 0.000s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.015s
+
+
+
+  real      0:00.24
+  real [s]  0.24
+  user [s]  0.13
+  sys  [s]  0.04
+  mem  [KB] 28288
+  avgm [KB] 0

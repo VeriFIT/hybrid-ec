@@ -1,0 +1,228 @@
+$ python ../hec-incr.py --maxtime 1000 ./model.lp --no_last_step --keep_going --minstep 8 --maxstep 10
+
+
+Looking for the right number of steps: 8 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.064s)
+fholdsAt(water_left=100,(0<T=<10))
+fholdsAt(water_right=100,(0<T=<10))
+fholdsAtC(water_left=(100->50),(10<T=<25/2),eq((((1,100),),-20)))
+fholdsAtC(water_left=(50->175/2),(25/2<T=<65/4),eq((((1,50),),10)))
+fholdsAtC(water_left=(175/2->50),(65/4<T=<145/8),eq((((1,175/2),),-20)))
+fholdsAtC(water_left=(50->475/8),(145/8<T=<305/16),eq((((1,50),),10)))
+fholdsAtC(water_left=(475/8->50),(305/16<T=<625/32),eq((((1,475/8),),-20)))
+fholdsAtC(water_left=(50->1675/32),(625/32<T=<1265/64),eq((((1,50),),10)))
+fholdsAtC(water_left=(1675/32->50),(1265/64<T=<2545/128),eq((((1,1675/32),),-20)))
+fholdsAtC(water_left=(50->6475/128),(2545/128<T=<5105/256),eq((((1,50),),10)))
+fholdsAtC(water_right=(100->125),(10<T=<25/2),eq((((1,100),),10)))
+fholdsAtC(water_right=(125->50),(25/2<T=<65/4),eq((((1,125),),-20)))
+fholdsAtC(water_right=(50->275/4),(65/4<T=<145/8),eq((((1,50),),10)))
+fholdsAtC(water_right=(275/4->50),(145/8<T=<305/16),eq((((1,275/4),),-20)))
+fholdsAtC(water_right=(50->875/16),(305/16<T=<625/32),eq((((1,50),),10)))
+fholdsAtC(water_right=(875/16->50),(625/32<T=<1265/64),eq((((1,875/16),),-20)))
+fholdsAtC(water_right=(50->3275/64),(1265/64<T=<2545/128),eq((((1,50),),10)))
+fholdsAtC(water_right=(3275/64->50),(2545/128<T=<5105/256),eq((((1,3275/64),),-20)))
+happens(start(right),10)
+happens(switch_left,25/2)
+happens(switch_left,145/8)
+happens(switch_left,625/32)
+happens(switch_left,2545/128)
+happens(switch_right,65/4)
+happens(switch_right,305/16)
+happens(switch_right,1265/64)
+happens(switch_right,5105/256)
+holdsAt(left_filling,(25/2<T=<65/4))
+holdsAt(left_filling,(145/8<T=<305/16))
+holdsAt(left_filling,(625/32<T=<1265/64))
+holdsAt(left_filling,(2545/128<T=<5105/256))
+holdsAt(right_filling,(10<T=<25/2))
+holdsAt(right_filling,(65/4<T=<145/8))
+holdsAt(right_filling,(305/16<T=<625/32))
+holdsAt(right_filling,(1265/64<T=<2545/128))
+maxStep(8)
+releasedAt(water_left,(10<T=<25/2))
+releasedAt(water_left,(25/2<T=<65/4))
+releasedAt(water_left,(65/4<T=<145/8))
+releasedAt(water_left,(145/8<T=<305/16))
+releasedAt(water_left,(305/16<T=<625/32))
+releasedAt(water_left,(625/32<T=<1265/64))
+releasedAt(water_left,(1265/64<T=<2545/128))
+releasedAt(water_left,(2545/128<T=<5105/256))
+releasedAt(water_right,(10<T=<25/2))
+releasedAt(water_right,(25/2<T=<65/4))
+releasedAt(water_right,(65/4<T=<145/8))
+releasedAt(water_right,(145/8<T=<305/16))
+releasedAt(water_right,(305/16<T=<625/32))
+releasedAt(water_right,(625/32<T=<1265/64))
+releasedAt(water_right,(1265/64<T=<2545/128))
+releasedAt(water_right,(2545/128<T=<5105/256))
+Assignment:
+(time,0)=10 (time,1)=25/2 (time,2)=65/4 (time,3)=145/8 (time,4)=305/16 (time,5)=625/32 (time,6)=1265/64 (time,7)=2545/128 (time,8)=5105/256 (water_left,0)=100 (water_left,1)=50 (water_left,2)=175/2 (water_left,3)=50 (water_left,4)=475/8 (water_left,5)=50 (water_left,6)=1675/32 (water_left,7)=50 (water_left,8)=6475/128 (water_right,0)=100 (water_right,1)=125 (water_right,2)=50 (water_right,3)=275/4 (water_right,4)=50 (water_right,5)=875/16 (water_right,6)=50 (water_right,7)=3275/64 (water_right,8)=50
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.065s   (Solving: 0.006s 1st Model: 0.005s Unsat: 0.001s)
+CPU Time     : 0.034s
+
+Looking for more solutions with more steps: 9 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.066s)
+fholdsAt(water_left=100,(0<T=<10))
+fholdsAt(water_right=100,(0<T=<10))
+fholdsAtC(water_left=(100->50),(10<T=<25/2),eq((((1,100),),-20)))
+fholdsAtC(water_left=(50->175/2),(25/2<T=<65/4),eq((((1,50),),10)))
+fholdsAtC(water_left=(175/2->50),(65/4<T=<145/8),eq((((1,175/2),),-20)))
+fholdsAtC(water_left=(50->475/8),(145/8<T=<305/16),eq((((1,50),),10)))
+fholdsAtC(water_left=(475/8->50),(305/16<T=<625/32),eq((((1,475/8),),-20)))
+fholdsAtC(water_left=(50->1675/32),(625/32<T=<1265/64),eq((((1,50),),10)))
+fholdsAtC(water_left=(1675/32->50),(1265/64<T=<2545/128),eq((((1,1675/32),),-20)))
+fholdsAtC(water_left=(50->6475/128),(2545/128<T=<5105/256),eq((((1,50),),10)))
+fholdsAtC(water_left=(6475/128->50),(5105/256<T=<10225/512),eq((((1,6475/128),),-20)))
+fholdsAtC(water_right=(100->125),(10<T=<25/2),eq((((1,100),),10)))
+fholdsAtC(water_right=(125->50),(25/2<T=<65/4),eq((((1,125),),-20)))
+fholdsAtC(water_right=(50->275/4),(65/4<T=<145/8),eq((((1,50),),10)))
+fholdsAtC(water_right=(275/4->50),(145/8<T=<305/16),eq((((1,275/4),),-20)))
+fholdsAtC(water_right=(50->875/16),(305/16<T=<625/32),eq((((1,50),),10)))
+fholdsAtC(water_right=(875/16->50),(625/32<T=<1265/64),eq((((1,875/16),),-20)))
+fholdsAtC(water_right=(50->3275/64),(1265/64<T=<2545/128),eq((((1,50),),10)))
+fholdsAtC(water_right=(3275/64->50),(2545/128<T=<5105/256),eq((((1,3275/64),),-20)))
+fholdsAtC(water_right=(50->12875/256),(5105/256<T=<10225/512),eq((((1,50),),10)))
+happens(start(right),10)
+happens(switch_left,25/2)
+happens(switch_left,145/8)
+happens(switch_left,625/32)
+happens(switch_left,2545/128)
+happens(switch_left,10225/512)
+happens(switch_right,65/4)
+happens(switch_right,305/16)
+happens(switch_right,1265/64)
+happens(switch_right,5105/256)
+holdsAt(left_filling,(25/2<T=<65/4))
+holdsAt(left_filling,(145/8<T=<305/16))
+holdsAt(left_filling,(625/32<T=<1265/64))
+holdsAt(left_filling,(2545/128<T=<5105/256))
+holdsAt(right_filling,(10<T=<25/2))
+holdsAt(right_filling,(65/4<T=<145/8))
+holdsAt(right_filling,(305/16<T=<625/32))
+holdsAt(right_filling,(1265/64<T=<2545/128))
+holdsAt(right_filling,(5105/256<T=<10225/512))
+maxStep(9)
+releasedAt(water_left,(10<T=<25/2))
+releasedAt(water_left,(25/2<T=<65/4))
+releasedAt(water_left,(65/4<T=<145/8))
+releasedAt(water_left,(145/8<T=<305/16))
+releasedAt(water_left,(305/16<T=<625/32))
+releasedAt(water_left,(625/32<T=<1265/64))
+releasedAt(water_left,(1265/64<T=<2545/128))
+releasedAt(water_left,(2545/128<T=<5105/256))
+releasedAt(water_left,(5105/256<T=<10225/512))
+releasedAt(water_right,(10<T=<25/2))
+releasedAt(water_right,(25/2<T=<65/4))
+releasedAt(water_right,(65/4<T=<145/8))
+releasedAt(water_right,(145/8<T=<305/16))
+releasedAt(water_right,(305/16<T=<625/32))
+releasedAt(water_right,(625/32<T=<1265/64))
+releasedAt(water_right,(1265/64<T=<2545/128))
+releasedAt(water_right,(2545/128<T=<5105/256))
+releasedAt(water_right,(5105/256<T=<10225/512))
+Assignment:
+(time,0)=10 (time,1)=25/2 (time,2)=65/4 (time,3)=145/8 (time,4)=305/16 (time,5)=625/32 (time,6)=1265/64 (time,7)=2545/128 (time,8)=5105/256 (time,9)=10225/512 (water_left,0)=100 (water_left,1)=50 (water_left,2)=175/2 (water_left,3)=50 (water_left,4)=475/8 (water_left,5)=50 (water_left,6)=1675/32 (water_left,7)=50 (water_left,8)=6475/128 (water_left,9)=50 (water_right,0)=100 (water_right,1)=125 (water_right,2)=50 (water_right,3)=275/4 (water_right,4)=50 (water_right,5)=875/16 (water_right,6)=50 (water_right,7)=3275/64 (water_right,8)=50 (water_right,9)=12875/256
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.066s   (Solving: 0.004s 1st Model: 0.004s Unsat: 0.000s)
+CPU Time     : 0.033s
+
+Looking for more solutions with more steps: 10 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.074s)
+fholdsAt(water_left=100,(0<T=<10))
+fholdsAt(water_right=100,(0<T=<10))
+fholdsAtC(water_left=(100->50),(10<T=<25/2),eq((((1,100),),-20)))
+fholdsAtC(water_left=(50->175/2),(25/2<T=<65/4),eq((((1,50),),10)))
+fholdsAtC(water_left=(175/2->50),(65/4<T=<145/8),eq((((1,175/2),),-20)))
+fholdsAtC(water_left=(50->475/8),(145/8<T=<305/16),eq((((1,50),),10)))
+fholdsAtC(water_left=(475/8->50),(305/16<T=<625/32),eq((((1,475/8),),-20)))
+fholdsAtC(water_left=(50->1675/32),(625/32<T=<1265/64),eq((((1,50),),10)))
+fholdsAtC(water_left=(1675/32->50),(1265/64<T=<2545/128),eq((((1,1675/32),),-20)))
+fholdsAtC(water_left=(50->6475/128),(2545/128<T=<5105/256),eq((((1,50),),10)))
+fholdsAtC(water_left=(6475/128->50),(5105/256<T=<10225/512),eq((((1,6475/128),),-20)))
+fholdsAtC(water_left=(50->25675/512),(10225/512<T=<20465/1024),eq((((1,50),),10)))
+fholdsAtC(water_right=(100->125),(10<T=<25/2),eq((((1,100),),10)))
+fholdsAtC(water_right=(125->50),(25/2<T=<65/4),eq((((1,125),),-20)))
+fholdsAtC(water_right=(50->275/4),(65/4<T=<145/8),eq((((1,50),),10)))
+fholdsAtC(water_right=(275/4->50),(145/8<T=<305/16),eq((((1,275/4),),-20)))
+fholdsAtC(water_right=(50->875/16),(305/16<T=<625/32),eq((((1,50),),10)))
+fholdsAtC(water_right=(875/16->50),(625/32<T=<1265/64),eq((((1,875/16),),-20)))
+fholdsAtC(water_right=(50->3275/64),(1265/64<T=<2545/128),eq((((1,50),),10)))
+fholdsAtC(water_right=(3275/64->50),(2545/128<T=<5105/256),eq((((1,3275/64),),-20)))
+fholdsAtC(water_right=(50->12875/256),(5105/256<T=<10225/512),eq((((1,50),),10)))
+fholdsAtC(water_right=(12875/256->50),(10225/512<T=<20465/1024),eq((((1,12875/256),),-20)))
+happens(start(right),10)
+happens(switch_left,25/2)
+happens(switch_left,145/8)
+happens(switch_left,625/32)
+happens(switch_left,2545/128)
+happens(switch_left,10225/512)
+happens(switch_right,65/4)
+happens(switch_right,305/16)
+happens(switch_right,1265/64)
+happens(switch_right,5105/256)
+happens(switch_right,20465/1024)
+holdsAt(left_filling,(25/2<T=<65/4))
+holdsAt(left_filling,(145/8<T=<305/16))
+holdsAt(left_filling,(625/32<T=<1265/64))
+holdsAt(left_filling,(2545/128<T=<5105/256))
+holdsAt(left_filling,(10225/512<T=<20465/1024))
+holdsAt(right_filling,(10<T=<25/2))
+holdsAt(right_filling,(65/4<T=<145/8))
+holdsAt(right_filling,(305/16<T=<625/32))
+holdsAt(right_filling,(1265/64<T=<2545/128))
+holdsAt(right_filling,(5105/256<T=<10225/512))
+maxStep(10)
+releasedAt(water_left,(10<T=<25/2))
+releasedAt(water_left,(25/2<T=<65/4))
+releasedAt(water_left,(65/4<T=<145/8))
+releasedAt(water_left,(145/8<T=<305/16))
+releasedAt(water_left,(305/16<T=<625/32))
+releasedAt(water_left,(625/32<T=<1265/64))
+releasedAt(water_left,(1265/64<T=<2545/128))
+releasedAt(water_left,(2545/128<T=<5105/256))
+releasedAt(water_left,(5105/256<T=<10225/512))
+releasedAt(water_left,(10225/512<T=<20465/1024))
+releasedAt(water_right,(10<T=<25/2))
+releasedAt(water_right,(25/2<T=<65/4))
+releasedAt(water_right,(65/4<T=<145/8))
+releasedAt(water_right,(145/8<T=<305/16))
+releasedAt(water_right,(305/16<T=<625/32))
+releasedAt(water_right,(625/32<T=<1265/64))
+releasedAt(water_right,(1265/64<T=<2545/128))
+releasedAt(water_right,(2545/128<T=<5105/256))
+releasedAt(water_right,(5105/256<T=<10225/512))
+releasedAt(water_right,(10225/512<T=<20465/1024))
+Assignment:
+(time,0)=10 (time,1)=25/2 (time,2)=65/4 (time,3)=145/8 (time,4)=305/16 (time,5)=625/32 (time,6)=1265/64 (time,7)=2545/128 (time,8)=5105/256 (time,9)=10225/512 (time,10)=20465/1024 (water_left,0)=100 (water_left,1)=50 (water_left,2)=175/2 (water_left,3)=50 (water_left,4)=475/8 (water_left,5)=50 (water_left,6)=1675/32 (water_left,7)=50 (water_left,8)=6475/128 (water_left,9)=50 (water_left,10)=25675/512 (water_right,0)=100 (water_right,1)=125 (water_right,2)=50 (water_right,3)=275/4 (water_right,4)=50 (water_right,5)=875/16 (water_right,6)=50 (water_right,7)=3275/64 (water_right,8)=50 (water_right,9)=12875/256 (water_right,10)=50
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.074s   (Solving: 0.007s 1st Model: 0.006s Unsat: 0.000s)
+CPU Time     : 0.040s
+
+Looking for more solutions with more steps: MAXSTEP_REACHED
+
+
+  real      0:00.62
+  real [s]  0.62
+  user [s]  0.32
+  sys  [s]  0.13
+  mem  [KB] 29508
+  avgm [KB] 0

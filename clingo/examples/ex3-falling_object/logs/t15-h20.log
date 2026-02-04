@@ -1,0 +1,23 @@
+$ clingo -c maxtime=15 -c paramHeight=20 -n 0 ../axioms/dec_clingo.lp ../axioms/dec_clingo-show.lp ./model.lp
+
+
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.149s)
+happens(drop(nathan,apple),1) holdsAt(height(apple,20),0) holdsAt(height(apple,20),1) happens(hitGround(apple),11) holdsAt(height(apple,0),15) holdsAt(height(apple,0),11) holdsAt(falling(apple),11)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.150s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.131s
+
+Command exited with non-zero status 30
+
+  real      0:00.16
+  real [s]  0.16
+  user [s]  0.11
+  sys  [s]  0.03
+  mem  [KB] 17280
+  avgm [KB] 0

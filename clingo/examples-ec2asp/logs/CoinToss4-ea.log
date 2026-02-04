@@ -1,0 +1,25 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.021s)
+happens(toss,1) happens(toss,2) happens(toss,3) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(heads,1) holdsAt(heads,1)
+Answer: 2 (Time: 0.022s)
+happens(toss,1) happens(toss,2) happens(toss,3) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(itsHeads,3) holdsAt(itsHeads,3) holdsAt(heads,1) holdsAt(heads,1) holdsAt(heads,4) holdsAt(heads,4)
+Answer: 3 (Time: 0.023s)
+happens(toss,1) happens(toss,2) happens(toss,3) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(itsHeads,1) holdsAt(itsHeads,1) holdsAt(heads,1) holdsAt(heads,1) holdsAt(heads,2) holdsAt(heads,2)
+Answer: 4 (Time: 0.024s)
+happens(toss,1) happens(toss,2) happens(toss,3) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(itsHeads,1) holdsAt(itsHeads,1) holdsAt(itsHeads,3) holdsAt(itsHeads,3) holdsAt(heads,1) holdsAt(heads,1) holdsAt(heads,2) holdsAt(heads,2) holdsAt(heads,4) holdsAt(heads,4)
+Answer: 5 (Time: 0.024s)
+happens(toss,1) happens(toss,2) happens(toss,3) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(itsHeads,2) holdsAt(itsHeads,2) holdsAt(heads,1) holdsAt(heads,1) holdsAt(heads,3) holdsAt(heads,3)
+Answer: 6 (Time: 0.025s)
+happens(toss,1) happens(toss,2) happens(toss,3) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(itsHeads,1) holdsAt(itsHeads,1) holdsAt(itsHeads,2) holdsAt(itsHeads,2) holdsAt(heads,1) holdsAt(heads,1) holdsAt(heads,2) holdsAt(heads,2) holdsAt(heads,3) holdsAt(heads,3)
+Answer: 7 (Time: 0.026s)
+happens(toss,1) happens(toss,2) happens(toss,3) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(itsHeads,2) holdsAt(itsHeads,2) holdsAt(itsHeads,3) holdsAt(itsHeads,3) holdsAt(heads,1) holdsAt(heads,1) holdsAt(heads,3) holdsAt(heads,3) holdsAt(heads,4) holdsAt(heads,4)
+Answer: 8 (Time: 0.026s)
+happens(toss,1) happens(toss,2) happens(toss,3) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(heads,0) holdsAt(itsHeads,0) holdsAt(itsHeads,4) holdsAt(itsHeads,1) holdsAt(itsHeads,1) holdsAt(itsHeads,2) holdsAt(itsHeads,2) holdsAt(itsHeads,3) holdsAt(itsHeads,3) holdsAt(heads,1) holdsAt(heads,1) holdsAt(heads,2) holdsAt(heads,2) holdsAt(heads,3) holdsAt(heads,3) holdsAt(heads,4) holdsAt(heads,4)
+SATISFIABLE
+
+Models       : 8
+Calls        : 1
+Time         : 0.027s (Solving: 0.01s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.006s

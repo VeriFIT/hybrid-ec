@@ -1,0 +1,39 @@
+$ python ../hec-incr.py ./model.lp --maxtime 1000
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.055s)
+fholdsAt(height(apple)=100,(0<T=<10))
+fholdsAt(height(apple)=50,(35<T=<1000))
+fholdsAt(height(ball)=0,(0<T=<10))
+fholdsAt(height(ball)=50,(35<T=<1000))
+fholdsAtC(height(apple)=(100->50),(10<T=<35),eq((((1,100),),-2)))
+fholdsAtC(height(ball)=(0->50),(10<T=<35),eq((((1,0),),2)))
+happens(collide(apple,ball),35)
+happens(drop(nathan1,apple),10)
+happens(throw(nathan2,ball),10)
+holdsAt(falling(apple),(10<T=<35))
+holdsAt(rising(ball),(10<T=<35))
+maxStep(2)
+releasedAt(height(apple),(10<T=<35))
+releasedAt(height(ball),(10<T=<35))
+Assignment:
+(height(apple),0)=100 (height(apple),1)=50 (height(apple),2)=50 (height(ball),0)=0 (height(ball),1)=50 (height(ball),2)=50 (time,0)=10 (time,1)=35 (time,2)=1000
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.055s   (Solving: 0.000s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.020s
+
+
+
+  real      0:00.41
+  real [s]  0.41
+  user [s]  0.20
+  sys  [s]  0.08
+  mem  [KB] 28860
+  avgm [KB] 0

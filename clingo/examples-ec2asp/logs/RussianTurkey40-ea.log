@@ -1,0 +1,13 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.030s)
+happens(load,10) happens(spin,20) happens(shoot,30) holdsAt(alive,0) holdsAt(loaded,11) holdsAt(loaded,12) holdsAt(loaded,13) holdsAt(loaded,14) holdsAt(loaded,15) holdsAt(loaded,16) holdsAt(loaded,17) holdsAt(loaded,18) holdsAt(loaded,19) holdsAt(loaded,20) holdsAt(loaded,20) holdsAt(alive,0) holdsAt(alive,1) holdsAt(alive,2) holdsAt(alive,3) holdsAt(alive,4) holdsAt(alive,5) holdsAt(alive,6) holdsAt(alive,7) holdsAt(alive,8) holdsAt(alive,9) holdsAt(alive,10) holdsAt(alive,10) holdsAt(alive,11) holdsAt(alive,12) holdsAt(alive,13) holdsAt(alive,14) holdsAt(alive,15) holdsAt(alive,16) holdsAt(alive,17) holdsAt(alive,18) holdsAt(alive,19) holdsAt(alive,20) holdsAt(alive,20) holdsAt(alive,21) holdsAt(alive,22) holdsAt(alive,23) holdsAt(alive,24) holdsAt(alive,25) holdsAt(alive,26) holdsAt(alive,27) holdsAt(alive,28) holdsAt(alive,29) holdsAt(alive,30) holdsAt(alive,30) holdsAt(alive,31) holdsAt(alive,32) holdsAt(alive,33) holdsAt(alive,34) holdsAt(alive,35) holdsAt(alive,36) holdsAt(alive,37) holdsAt(alive,38) holdsAt(alive,39) holdsAt(alive,40) holdsAt(alive,40)
+Answer: 2 (Time: 0.031s)
+happens(load,10) happens(spin,20) happens(shoot,30) holdsAt(alive,0) holdsAt(loaded,11) holdsAt(loaded,12) holdsAt(loaded,13) holdsAt(loaded,14) holdsAt(loaded,15) holdsAt(loaded,16) holdsAt(loaded,17) holdsAt(loaded,18) holdsAt(loaded,19) holdsAt(loaded,20) holdsAt(loaded,20) holdsAt(alive,0) holdsAt(loaded,21) holdsAt(loaded,22) holdsAt(loaded,23) holdsAt(loaded,24) holdsAt(loaded,25) holdsAt(loaded,26) holdsAt(loaded,27) holdsAt(loaded,28) holdsAt(loaded,29) holdsAt(loaded,30) holdsAt(loaded,30) holdsAt(alive,1) holdsAt(alive,2) holdsAt(alive,3) holdsAt(alive,4) holdsAt(alive,5) holdsAt(alive,6) holdsAt(alive,7) holdsAt(alive,8) holdsAt(alive,9) holdsAt(alive,10) holdsAt(alive,10) holdsAt(alive,11) holdsAt(alive,12) holdsAt(alive,13) holdsAt(alive,14) holdsAt(alive,15) holdsAt(alive,16) holdsAt(alive,17) holdsAt(alive,18) holdsAt(alive,19) holdsAt(alive,20) holdsAt(alive,20) holdsAt(alive,21) holdsAt(alive,22) holdsAt(alive,23) holdsAt(alive,24) holdsAt(alive,25) holdsAt(alive,26) holdsAt(alive,27) holdsAt(alive,28) holdsAt(alive,29) holdsAt(alive,30) holdsAt(alive,30)
+SATISFIABLE
+
+Models       : 2
+Calls        : 1
+Time         : 0.032s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.011s

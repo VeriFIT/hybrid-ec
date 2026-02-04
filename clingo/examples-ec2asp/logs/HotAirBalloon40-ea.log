@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.176s)
+happens(turnOnHeater(nathan,balloon),0) happens(turnOffHeater(nathan,balloon),20) holdsAt(height(balloon,0),0) holdsAt(heaterOn(balloon),1) holdsAt(height(balloon,1),1) holdsAt(height(balloon,2),2) holdsAt(height(balloon,3),3) holdsAt(height(balloon,4),4) holdsAt(height(balloon,5),5) holdsAt(height(balloon,6),6) holdsAt(height(balloon,7),7) holdsAt(height(balloon,8),8) holdsAt(height(balloon,9),9) holdsAt(height(balloon,10),10) holdsAt(height(balloon,11),11) holdsAt(height(balloon,12),12) holdsAt(height(balloon,13),13) holdsAt(height(balloon,14),14) holdsAt(height(balloon,15),15) holdsAt(height(balloon,16),16) holdsAt(height(balloon,17),17) holdsAt(height(balloon,18),18) holdsAt(height(balloon,19),19) holdsAt(height(balloon,20),20) holdsAt(heaterOn(balloon),2) holdsAt(heaterOn(balloon),3) holdsAt(heaterOn(balloon),4) holdsAt(heaterOn(balloon),5) holdsAt(heaterOn(balloon),6) holdsAt(heaterOn(balloon),7) holdsAt(heaterOn(balloon),8) holdsAt(heaterOn(balloon),9) holdsAt(heaterOn(balloon),10) holdsAt(heaterOn(balloon),11) holdsAt(heaterOn(balloon),12) holdsAt(heaterOn(balloon),13) holdsAt(heaterOn(balloon),14) holdsAt(heaterOn(balloon),15) holdsAt(heaterOn(balloon),16) holdsAt(heaterOn(balloon),17) holdsAt(heaterOn(balloon),18) holdsAt(heaterOn(balloon),19) holdsAt(heaterOn(balloon),20) holdsAt(heaterOn(balloon),20) holdsAt(height(balloon,0),40) holdsAt(height(balloon,0),40) holdsAt(height(balloon,1),39) holdsAt(height(balloon,2),38) holdsAt(height(balloon,3),37) holdsAt(height(balloon,4),36) holdsAt(height(balloon,5),35) holdsAt(height(balloon,6),34) holdsAt(height(balloon,7),33) holdsAt(height(balloon,8),32) holdsAt(height(balloon,9),31) holdsAt(height(balloon,10),30) holdsAt(height(balloon,11),29) holdsAt(height(balloon,12),28) holdsAt(height(balloon,13),27) holdsAt(height(balloon,14),26) holdsAt(height(balloon,15),25) holdsAt(height(balloon,16),24) holdsAt(height(balloon,17),23) holdsAt(height(balloon,18),22) holdsAt(height(balloon,19),21) holdsAt(height(balloon,0),0) holdsAt(height(balloon,20),20)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.177s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.156s

@@ -1,0 +1,46 @@
+$ python ../hec-incr.py --maxtime 1000 --con -c paramHeight=20 ./model.lp ./extra-queries.lp
+
+
+Looking for the right number of steps: 1 2 3 4 5 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.081s)
+maxStep(5)
+happens(checkAtDur,12)
+happens(checkAtH,19)
+happens(checkAtT,15)
+happens(hitGround(apple),20)
+happens(drop(nathan,apple),10)
+holdsAt(falling(apple),(10<T=<12))
+holdsAt(falling(apple),(12<T=<15))
+holdsAt(falling(apple),(15<T=<19))
+holdsAt(falling(apple),(19<T=<20))
+releasedAt(height(apple),(10<T=<12))
+releasedAt(height(apple),(12<T=<15))
+releasedAt(height(apple),(15<T=<19))
+releasedAt(height(apple),(19<T=<20))
+fholdsAt(height(apple)=20,(0<T=<10))
+fholdsAt(height(apple)=0,(20<T=<1000))
+fholdsAtC(height(apple)=(20->16),(10<T=<12),eq((((1,20),),-2)))
+fholdsAtC(height(apple)=(16->10),(12<T=<15),eq((((1,20),),-2)))
+fholdsAtC(height(apple)=(10->2),(15<T=<19),eq((((1,20),),-2)))
+fholdsAtC(height(apple)=(2->0),(19<T=<20),eq((((1,20),),-2)))
+Assignment:
+(time,0)=10 (time,1)=12 (time,2)=15 (time,3)=19 (time,4)=20 (time,5)=1000 (height(apple),0)=20 (height(apple),1)=16 (height(apple),2)=10 (height(apple),3)=2 (height(apple),4)=0 (height(apple),5)=0 (timeDiff,0,0)=0 (timeDiff,0,1)=2 (timeDiff,0,2)=5 (timeDiff,0,3)=9 (timeDiff,0,4)=10 (timeDiff,0,5)=990 (timeDiff,1,1)=0 (timeDiff,1,2)=3 (timeDiff,1,3)=7 (timeDiff,1,4)=8 (timeDiff,1,5)=988 (timeDiff,2,2)=0 (timeDiff,2,3)=4 (timeDiff,2,4)=5 (timeDiff,2,5)=985 (timeDiff,3,3)=0 (timeDiff,3,4)=1 (timeDiff,3,5)=981 (timeDiff,4,4)=0 (timeDiff,4,5)=980 (timeDiff,5,5)=0
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.083s (Solving: 0.01s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.059s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.98
+  real [s]  0.98
+  user [s]  0.54
+  sys  [s]  0.19
+  mem  [KB] 26480
+  avgm [KB] 0

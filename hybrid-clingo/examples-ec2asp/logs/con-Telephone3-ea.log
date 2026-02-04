@@ -1,0 +1,34 @@
+$ python ../hec-incr.py --con ./Telephone3-ea.lp
+
+
+Looking for the right number of steps: 1 2 3 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.059s)
+maxStep(3)
+happens(pickUp(agent1,phone1),0)
+happens(pickUp(agent2,phone2),2)
+happens(dial(agent1,phone1,phone2),1)
+holdsAt(dialTone(phone1),(0<T=<1))
+holdsAt(idle(phone2),(0<T=<1))
+holdsAt(connected(phone1,phone2),(2<T=<3))
+holdsAt(ringing(phone1,phone2),(1<T=<2))
+Assignment:
+(time,0)=0 (time,1)=1 (time,2)=2 (time,3)=3
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.059s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.033s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.58
+  real [s]  0.58
+  user [s]  0.31
+  sys  [s]  0.11
+  mem  [KB] 21376
+  avgm [KB] 0

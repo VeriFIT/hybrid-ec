@@ -1,0 +1,40 @@
+$ python ../hec-incr.py ./model.lp --maxtime 1000 --con
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.057s)
+maxStep(2)
+happens(collide(apple,ball),35)
+happens(drop(nathan1,apple),10)
+happens(throw(nathan2,ball),10)
+holdsAt(falling(apple),(10<T=<35))
+holdsAt(rising(ball),(10<T=<35))
+releasedAt(height(apple),(10<T=<35))
+releasedAt(height(ball),(10<T=<35))
+fholdsAt(height(apple)=100,(0<T=<10))
+fholdsAt(height(apple)=50,(35<T=<1000))
+fholdsAt(height(ball)=0,(0<T=<10))
+fholdsAt(height(ball)=50,(35<T=<1000))
+fholdsAtC(height(apple)=(100->50),(10<T=<35),eq((((1,100),),-2)))
+fholdsAtC(height(ball)=(0->50),(10<T=<35),eq((((1,0),),2)))
+Assignment:
+(time,0)=10 (time,1)=35 (time,2)=1000 (height(apple),0)=100 (height(apple),1)=50 (height(apple),2)=50 (height(ball),0)=0 (height(ball),1)=50 (height(ball),2)=50
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.058s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.034s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.41
+  real [s]  0.41
+  user [s]  0.25
+  sys  [s]  0.06
+  mem  [KB] 21376
+  avgm [KB] 0

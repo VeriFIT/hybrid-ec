@@ -1,0 +1,33 @@
+$ python ../hec-incr.py --con ./Supermarket40-ea.lp
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.049s)
+maxStep(2)
+happens(pull,15)
+happens(pull,35)
+happens(push,15)
+happens(push,35)
+holdsAt(spinning,(15<T=<35))
+holdsAt(spinning,(35<T=<40))
+Assignment:
+(time,0)=15 (time,1)=35 (time,2)=40
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.050s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.024s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.39
+  real [s]  0.39
+  user [s]  0.21
+  sys  [s]  0.08
+  mem  [KB] 20864
+  avgm [KB] 0

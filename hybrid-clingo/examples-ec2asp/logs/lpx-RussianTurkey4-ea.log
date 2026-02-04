@@ -1,0 +1,68 @@
+$ python ../hec-incr.py ./RussianTurkey4-ea.lp
+
+
+Looking for the right number of steps: 1 2 3 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.048s)
+-holdsAt(loaded,(2<T=<3))
+-holdsAt(loaded,(3<T=<4))
+-holdsAt(loaded,(0<T=<1))
+-releasedAt(alive,(1<T=<2))
+-releasedAt(alive,(2<T=<3))
+-releasedAt(alive,(3<T=<4))
+-releasedAt(alive,(0<T=<1))
+-releasedAt(loaded,(1<T=<2))
+-releasedAt(loaded,(3<T=<4))
+-releasedAt(loaded,(0<T=<1))
+happens(load,1)
+happens(shoot,3)
+happens(spin,2)
+holdsAt(alive,(1<T=<2))
+holdsAt(alive,(2<T=<3))
+holdsAt(alive,(3<T=<4))
+holdsAt(alive,(0<T=<1))
+holdsAt(loaded,(1<T=<2))
+maxStep(3)
+releasedAt(loaded,(2<T=<3))
+Assignment:
+(time,0)=1 (time,1)=2 (time,2)=3 (time,3)=4
+Answer: 2 (Time: 0.048s)
+-holdsAt(alive,(3<T=<4))
+-holdsAt(loaded,(3<T=<4))
+-holdsAt(loaded,(0<T=<1))
+-releasedAt(alive,(1<T=<2))
+-releasedAt(alive,(2<T=<3))
+-releasedAt(alive,(3<T=<4))
+-releasedAt(alive,(0<T=<1))
+-releasedAt(loaded,(1<T=<2))
+-releasedAt(loaded,(3<T=<4))
+-releasedAt(loaded,(0<T=<1))
+happens(load,1)
+happens(shoot,3)
+happens(spin,2)
+holdsAt(alive,(1<T=<2))
+holdsAt(alive,(2<T=<3))
+holdsAt(alive,(0<T=<1))
+holdsAt(loaded,(1<T=<2))
+holdsAt(loaded,(2<T=<3))
+maxStep(3)
+releasedAt(loaded,(2<T=<3))
+Assignment:
+(time,0)=1 (time,1)=2 (time,2)=3 (time,3)=4
+SATISFIABLE
+
+Models       : 2
+Calls        : 1
+Time         : 0.048s   (Solving: 0.000s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.017s
+
+
+
+  real      0:00.56
+  real [s]  0.56
+  user [s]  0.30
+  sys  [s]  0.09
+  mem  [KB] 28484
+  avgm [KB] 0

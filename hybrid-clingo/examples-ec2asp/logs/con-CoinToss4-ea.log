@@ -1,0 +1,151 @@
+$ python ../hec-incr.py --con ./CoinToss4-ea.lp
+
+
+Looking for the right number of steps: 1 2 3 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.044s)
+maxStep(3)
+happens(toss,1)
+happens(toss,2)
+happens(toss,3)
+holdsAt(heads,(0<T=<1))
+holdsAt(itsHeads,(3<T=<4))
+releasedAt(itsHeads,(0<T=<1))
+releasedAt(itsHeads,(1<T=<2))
+releasedAt(itsHeads,(2<T=<3))
+releasedAt(itsHeads,(3<T=<4))
+Assignment:
+(time,0)=1 (time,1)=2 (time,2)=3 (time,3)=4
+Answer: 2 (Time: 0.045s)
+maxStep(3)
+happens(toss,1)
+happens(toss,2)
+happens(toss,3)
+holdsAt(heads,(0<T=<1))
+holdsAt(heads,(1<T=<2))
+holdsAt(itsHeads,(0<T=<1))
+holdsAt(itsHeads,(3<T=<4))
+releasedAt(itsHeads,(0<T=<1))
+releasedAt(itsHeads,(1<T=<2))
+releasedAt(itsHeads,(2<T=<3))
+releasedAt(itsHeads,(3<T=<4))
+Assignment:
+(time,0)=1 (time,1)=2 (time,2)=3 (time,3)=4
+Answer: 3 (Time: 0.045s)
+maxStep(3)
+happens(toss,1)
+happens(toss,2)
+happens(toss,3)
+holdsAt(heads,(0<T=<1))
+holdsAt(heads,(3<T=<4))
+holdsAt(itsHeads,(2<T=<3))
+holdsAt(itsHeads,(3<T=<4))
+releasedAt(itsHeads,(0<T=<1))
+releasedAt(itsHeads,(1<T=<2))
+releasedAt(itsHeads,(2<T=<3))
+releasedAt(itsHeads,(3<T=<4))
+Assignment:
+(time,0)=1 (time,1)=2 (time,2)=3 (time,3)=4
+Answer: 4 (Time: 0.045s)
+maxStep(3)
+happens(toss,1)
+happens(toss,2)
+happens(toss,3)
+holdsAt(heads,(0<T=<1))
+holdsAt(heads,(1<T=<2))
+holdsAt(heads,(3<T=<4))
+holdsAt(itsHeads,(0<T=<1))
+holdsAt(itsHeads,(2<T=<3))
+holdsAt(itsHeads,(3<T=<4))
+releasedAt(itsHeads,(0<T=<1))
+releasedAt(itsHeads,(1<T=<2))
+releasedAt(itsHeads,(2<T=<3))
+releasedAt(itsHeads,(3<T=<4))
+Assignment:
+(time,0)=1 (time,1)=2 (time,2)=3 (time,3)=4
+Answer: 5 (Time: 0.046s)
+maxStep(3)
+happens(toss,1)
+happens(toss,2)
+happens(toss,3)
+holdsAt(heads,(0<T=<1))
+holdsAt(heads,(2<T=<3))
+holdsAt(itsHeads,(1<T=<2))
+holdsAt(itsHeads,(3<T=<4))
+releasedAt(itsHeads,(0<T=<1))
+releasedAt(itsHeads,(1<T=<2))
+releasedAt(itsHeads,(2<T=<3))
+releasedAt(itsHeads,(3<T=<4))
+Assignment:
+(time,0)=1 (time,1)=2 (time,2)=3 (time,3)=4
+Answer: 6 (Time: 0.046s)
+maxStep(3)
+happens(toss,1)
+happens(toss,2)
+happens(toss,3)
+holdsAt(heads,(0<T=<1))
+holdsAt(heads,(2<T=<3))
+holdsAt(heads,(3<T=<4))
+holdsAt(itsHeads,(1<T=<2))
+holdsAt(itsHeads,(2<T=<3))
+holdsAt(itsHeads,(3<T=<4))
+releasedAt(itsHeads,(0<T=<1))
+releasedAt(itsHeads,(1<T=<2))
+releasedAt(itsHeads,(2<T=<3))
+releasedAt(itsHeads,(3<T=<4))
+Assignment:
+(time,0)=1 (time,1)=2 (time,2)=3 (time,3)=4
+Answer: 7 (Time: 0.047s)
+maxStep(3)
+happens(toss,1)
+happens(toss,2)
+happens(toss,3)
+holdsAt(heads,(0<T=<1))
+holdsAt(heads,(1<T=<2))
+holdsAt(heads,(2<T=<3))
+holdsAt(itsHeads,(0<T=<1))
+holdsAt(itsHeads,(1<T=<2))
+holdsAt(itsHeads,(3<T=<4))
+releasedAt(itsHeads,(0<T=<1))
+releasedAt(itsHeads,(1<T=<2))
+releasedAt(itsHeads,(2<T=<3))
+releasedAt(itsHeads,(3<T=<4))
+Assignment:
+(time,0)=1 (time,1)=2 (time,2)=3 (time,3)=4
+Answer: 8 (Time: 0.047s)
+maxStep(3)
+happens(toss,1)
+happens(toss,2)
+happens(toss,3)
+holdsAt(heads,(0<T=<1))
+holdsAt(heads,(1<T=<2))
+holdsAt(heads,(2<T=<3))
+holdsAt(heads,(3<T=<4))
+holdsAt(itsHeads,(0<T=<1))
+holdsAt(itsHeads,(1<T=<2))
+holdsAt(itsHeads,(2<T=<3))
+holdsAt(itsHeads,(3<T=<4))
+releasedAt(itsHeads,(0<T=<1))
+releasedAt(itsHeads,(1<T=<2))
+releasedAt(itsHeads,(2<T=<3))
+releasedAt(itsHeads,(3<T=<4))
+Assignment:
+(time,0)=1 (time,1)=2 (time,2)=3 (time,3)=4
+SATISFIABLE
+
+Models       : 8
+Calls        : 1
+Time         : 0.047s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.027s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.54
+  real [s]  0.54
+  user [s]  0.32
+  sys  [s]  0.08
+  mem  [KB] 20864
+  avgm [KB] 0

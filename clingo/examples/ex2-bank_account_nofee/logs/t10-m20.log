@@ -1,0 +1,23 @@
+$ clingo -c maxtime=10 -c maxmoney=20 -n 0 ../axioms/dec_clingo.lp ../axioms/dec_clingo-show.lp ./model.lp
+
+
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 1.281s)
+happens(transfer(account1,account2,2),1) happens(transfer(account1,account2,4),2) holdsAt(balance(account1,10),0) holdsAt(balance(account2,10),0) holdsAt(balance(account1,10),1) holdsAt(balance(account2,10),1) holdsAt(balance(account1,8),2) holdsAt(balance(account2,12),2) holdsAt(balance(account1,4),10) holdsAt(balance(account2,16),10)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 1.282s (Solving: 0.01s 1st Model: 0.01s Unsat: 0.00s)
+CPU Time     : 1.265s
+
+Command exited with non-zero status 30
+
+  real      0:01.31
+  real [s]  1.31
+  user [s]  1.22
+  sys  [s]  0.06
+  mem  [KB] 42276
+  avgm [KB] 0

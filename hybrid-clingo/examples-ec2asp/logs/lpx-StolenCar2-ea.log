@@ -1,0 +1,32 @@
+$ python ../hec-incr.py ./StolenCar2-ea.lp
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.056s)
+-holdsAt(carParked,(e<T=<2))
+-releasedAt(carParked,(0<T=<e))
+-releasedAt(carParked,(e<T=<2))
+happens(park,0)
+happens(steal,e)
+holdsAt(carParked,(0<T=<e))
+maxStep(2)
+Assignment:
+(time,0)=0 (time,1)=e (time,2)=2
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.056s   (Solving: 0.000s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.017s
+
+
+
+  real      0:00.41
+  real [s]  0.41
+  user [s]  0.19
+  sys  [s]  0.08
+  mem  [KB] 28544
+  avgm [KB] 0

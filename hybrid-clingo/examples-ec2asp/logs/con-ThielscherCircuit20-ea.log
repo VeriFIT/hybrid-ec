@@ -1,0 +1,50 @@
+$ python ../hec-incr.py --con ../axioms/causal.lp ./ThielscherCircuit20-ea.lp
+
+
+Looking for the right number of steps: 1 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.047s)
+maxStep(1)
+happens(close1,12)
+happens(closeRelay,12)
+happens(open2,12)
+holdsAt(relay,(12<T=<20))
+holdsAt(switch1,(12<T=<20))
+holdsAt(switch2,(0<T=<12))
+holdsAt(switch3,(0<T=<12))
+holdsAt(switch3,(12<T=<20))
+-holdsAt(light,(0<T=<12))
+-holdsAt(light,(12<T=<20))
+-holdsAt(relay,(0<T=<12))
+-holdsAt(switch1,(0<T=<12))
+-holdsAt(switch2,(12<T=<20))
+-releasedAt(light,(0<T=<12))
+-releasedAt(light,(12<T=<20))
+-releasedAt(relay,(0<T=<12))
+-releasedAt(relay,(12<T=<20))
+-releasedAt(switch1,(0<T=<12))
+-releasedAt(switch1,(12<T=<20))
+-releasedAt(switch2,(0<T=<12))
+-releasedAt(switch2,(12<T=<20))
+-releasedAt(switch3,(0<T=<12))
+-releasedAt(switch3,(12<T=<20))
+Assignment:
+(time,0)=12 (time,1)=20
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.048s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.025s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.24
+  real [s]  0.24
+  user [s]  0.12
+  sys  [s]  0.05
+  mem  [KB] 20992
+  avgm [KB] 0

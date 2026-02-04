@@ -1,0 +1,40 @@
+$ python ../hec-incr.py --con ./WalkingTurkey40-ea.lp
+
+
+Looking for the right number of steps: 1 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.046s)
+maxStep(1)
+happens(shoot,25)
+holdsAt(alive,(0<T=<25))
+holdsAt(loaded,(0<T=<25))
+holdsAt(loaded,(25<T=<40))
+holdsAt(walking,(0<T=<25))
+-holdsAt(alive,(25<T=<40))
+-holdsAt(walking,(25<T=<40))
+-releasedAt(alive,(0<T=<25))
+-releasedAt(alive,(25<T=<40))
+-releasedAt(loaded,(0<T=<25))
+-releasedAt(loaded,(25<T=<40))
+-releasedAt(walking,(0<T=<25))
+-releasedAt(walking,(25<T=<40))
+Assignment:
+(time,0)=25 (time,1)=40
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.047s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.023s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.24
+  real [s]  0.24
+  user [s]  0.12
+  sys  [s]  0.05
+  mem  [KB] 20864
+  avgm [KB] 0

@@ -1,0 +1,64 @@
+$ python ../hec-incr.py ./model-zeno.lp --maxtime 1000 --con  --project
+
+
+Looking for the right number of steps: 1 2 3 4 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.081s)
+maxStep(4)
+happens(chargeServiceFee(account1),22)
+happens(chargeServiceFee(account1),1000)
+happens(monthlyReset(account1),50)
+happens(monthlyReset(account2),50)
+happens(transfer(account1,account2,2),10)
+happens(transfer(account1,account2,4),20)
+holdsAt(serviceFeeCharged(account1),(22<T=<50))
+fholdsAt(balance(account1)=10,(0<T=<10))
+fholdsAt(balance(account1)=8,(10<T=<20))
+fholdsAt(balance(account1)=4,(20<T=<22))
+fholdsAt(balance(account1)=3,(22<T=<50))
+fholdsAt(balance(account1)=3,(50<T=<1000))
+fholdsAt(balance(account2)=10,(0<T=<10))
+fholdsAt(balance(account2)=12,(10<T=<20))
+fholdsAt(balance(account2)=16,(20<T=<22))
+fholdsAt(balance(account2)=16,(22<T=<50))
+fholdsAt(balance(account2)=16,(50<T=<1000))
+fholdsAt(minimumBalance(account1)=5,(0<T=<10))
+fholdsAt(minimumBalance(account1)=5,(10<T=<20))
+fholdsAt(minimumBalance(account1)=5,(20<T=<22))
+fholdsAt(minimumBalance(account1)=5,(22<T=<50))
+fholdsAt(minimumBalance(account1)=5,(50<T=<1000))
+fholdsAt(minimumBalance(account2)=5,(0<T=<10))
+fholdsAt(minimumBalance(account2)=5,(10<T=<20))
+fholdsAt(minimumBalance(account2)=5,(20<T=<22))
+fholdsAt(minimumBalance(account2)=5,(22<T=<50))
+fholdsAt(minimumBalance(account2)=5,(50<T=<1000))
+fholdsAt(serviceFee(account1)=1,(0<T=<10))
+fholdsAt(serviceFee(account1)=1,(10<T=<20))
+fholdsAt(serviceFee(account1)=1,(20<T=<22))
+fholdsAt(serviceFee(account1)=1,(22<T=<50))
+fholdsAt(serviceFee(account1)=1,(50<T=<1000))
+fholdsAt(serviceFee(account2)=1,(0<T=<10))
+fholdsAt(serviceFee(account2)=1,(10<T=<20))
+fholdsAt(serviceFee(account2)=1,(20<T=<22))
+fholdsAt(serviceFee(account2)=1,(22<T=<50))
+fholdsAt(serviceFee(account2)=1,(50<T=<1000))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=22 (time,3)=50 (time,4)=1000 (balance(account1),0)=10 (balance(account1),1)=8 (balance(account1),2)=4 (balance(account1),3)=3 (balance(account1),4)=3 (balance(account2),0)=10 (balance(account2),1)=12 (balance(account2),2)=16 (balance(account2),3)=16 (balance(account2),4)=16 (minimumBalance(account1),0)=5 (minimumBalance(account1),1)=5 (minimumBalance(account1),2)=5 (minimumBalance(account1),3)=5 (minimumBalance(account1),4)=5 (minimumBalance(account2),0)=5 (minimumBalance(account2),1)=5 (minimumBalance(account2),2)=5 (minimumBalance(account2),3)=5 (minimumBalance(account2),4)=5 (serviceFee(account1),0)=1 (serviceFee(account1),1)=1 (serviceFee(account1),2)=1 (serviceFee(account1),3)=1 (serviceFee(account1),4)=1 (serviceFee(account2),0)=1 (serviceFee(account2),1)=1 (serviceFee(account2),2)=1 (serviceFee(account2),3)=1 (serviceFee(account2),4)=1
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.083s (Solving: 0.01s 1st Model: 0.01s Unsat: 0.00s)
+CPU Time     : 0.053s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.76
+  real [s]  0.76
+  user [s]  0.42
+  sys  [s]  0.16
+  mem  [KB] 22524
+  avgm [KB] 0

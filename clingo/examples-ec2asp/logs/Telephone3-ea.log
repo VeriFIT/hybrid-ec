@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.024s)
+happens(pickUp(agent1,phone1),0) happens(dial(agent1,phone1,phone2),1) happens(pickUp(agent2,phone2),2) holdsAt(idle(phone1),0) holdsAt(idle(phone2),0) holdsAt(dialTone(phone1),1) holdsAt(idle(phone1),0) holdsAt(idle(phone2),0) holdsAt(dialTone(phone1),1) holdsAt(idle(phone2),1) holdsAt(idle(phone2),1) holdsAt(ringing(phone1,phone2),2) holdsAt(ringing(phone1,phone2),2) holdsAt(connected(phone1,phone2),3) holdsAt(connected(phone1,phone2),3)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.025s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.010s

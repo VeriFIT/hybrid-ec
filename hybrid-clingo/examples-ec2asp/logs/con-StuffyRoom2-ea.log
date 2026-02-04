@@ -1,0 +1,35 @@
+$ python ../hec-incr.py --con ./StuffyRoom2-ea.lp
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.047s)
+maxStep(2)
+happens(close2,1)
+happens(start,0)
+holdsAt(blocked1,(0<T=<1))
+holdsAt(blocked1,(1<T=<40))
+holdsAt(blocked2,(1<T=<40))
+holdsAt(stuffy,(1<T=<40))
+releasedAt(stuffy,(0<T=<1))
+releasedAt(stuffy,(1<T=<40))
+Assignment:
+(time,0)=0 (time,1)=1 (time,2)=40
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.047s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.024s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.40
+  real [s]  0.40
+  user [s]  0.20
+  sys  [s]  0.09
+  mem  [KB] 20992
+  avgm [KB] 0

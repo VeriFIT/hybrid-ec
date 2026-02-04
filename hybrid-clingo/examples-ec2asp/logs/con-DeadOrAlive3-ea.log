@@ -1,0 +1,48 @@
+$ python ../hec-incr.py --con ./DeadOrAlive3-ea.lp
+
+
+Looking for the right number of steps: 1 2 3 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.047s)
+maxStep(3)
+happens(load,0)
+happens(shoot,2)
+happens(sneeze,1)
+holdsAt(alive,(0<T=<1))
+holdsAt(alive,(1<T=<2))
+holdsAt(dead,(2<T=<3))
+holdsAt(loaded,(0<T=<1))
+holdsAt(loaded,(1<T=<2))
+releasedAt(dead,(0<T=<1))
+releasedAt(dead,(1<T=<2))
+releasedAt(dead,(2<T=<3))
+-holdsAt(alive,(2<T=<3))
+-holdsAt(dead,(0<T=<1))
+-holdsAt(dead,(1<T=<2))
+-holdsAt(loaded,(2<T=<3))
+-releasedAt(alive,(0<T=<1))
+-releasedAt(alive,(1<T=<2))
+-releasedAt(alive,(2<T=<3))
+-releasedAt(loaded,(0<T=<1))
+-releasedAt(loaded,(1<T=<2))
+-releasedAt(loaded,(2<T=<3))
+Assignment:
+(time,0)=0 (time,1)=1 (time,2)=2 (time,3)=3
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.047s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.024s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.55
+  real [s]  0.55
+  user [s]  0.31
+  sys  [s]  0.09
+  mem  [KB] 20992
+  avgm [KB] 0

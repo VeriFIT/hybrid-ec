@@ -1,0 +1,82 @@
+$ python ../hec-incr.py ./model.lp --maxtime 1000
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.048s)
+fholdsAt(sideUp=1,(0<T=<10))
+fholdsAt(sideUp=3,(10<T=<20))
+fholdsAt(sideUp=3,(20<T=<1000))
+happens(land,20)
+happens(roll,10)
+maxStep(2)
+releasedAt(sideUp,(10<T=<20))
+Assignment:
+(sideUp,0)=1 (sideUp,1)=3 (sideUp,2)=3 (time,0)=10 (time,1)=20 (time,2)=1000
+Answer: 2 (Time: 0.048s)
+fholdsAt(sideUp=1,(0<T=<10))
+fholdsAt(sideUp=2,(10<T=<20))
+fholdsAt(sideUp=2,(20<T=<1000))
+happens(land,20)
+happens(roll,10)
+maxStep(2)
+releasedAt(sideUp,(10<T=<20))
+Assignment:
+(sideUp,0)=1 (sideUp,1)=2 (sideUp,2)=2 (time,0)=10 (time,1)=20 (time,2)=1000
+Answer: 3 (Time: 0.048s)
+fholdsAt(sideUp=1,(0<T=<10))
+fholdsAt(sideUp=1,(10<T=<20))
+fholdsAt(sideUp=1,(20<T=<1000))
+happens(land,20)
+happens(roll,10)
+maxStep(2)
+releasedAt(sideUp,(10<T=<20))
+Assignment:
+(sideUp,0)=1 (sideUp,1)=1 (sideUp,2)=1 (time,0)=10 (time,1)=20 (time,2)=1000
+Answer: 4 (Time: 0.048s)
+fholdsAt(sideUp=1,(0<T=<10))
+fholdsAt(sideUp=6,(10<T=<20))
+fholdsAt(sideUp=6,(20<T=<1000))
+happens(land,20)
+happens(roll,10)
+maxStep(2)
+releasedAt(sideUp,(10<T=<20))
+Assignment:
+(sideUp,0)=1 (sideUp,1)=6 (sideUp,2)=6 (time,0)=10 (time,1)=20 (time,2)=1000
+Answer: 5 (Time: 0.048s)
+fholdsAt(sideUp=1,(0<T=<10))
+fholdsAt(sideUp=5,(10<T=<20))
+fholdsAt(sideUp=5,(20<T=<1000))
+happens(land,20)
+happens(roll,10)
+maxStep(2)
+releasedAt(sideUp,(10<T=<20))
+Assignment:
+(sideUp,0)=1 (sideUp,1)=5 (sideUp,2)=5 (time,0)=10 (time,1)=20 (time,2)=1000
+Answer: 6 (Time: 0.048s)
+fholdsAt(sideUp=1,(0<T=<10))
+fholdsAt(sideUp=4,(10<T=<20))
+fholdsAt(sideUp=4,(20<T=<1000))
+happens(land,20)
+happens(roll,10)
+maxStep(2)
+releasedAt(sideUp,(10<T=<20))
+Assignment:
+(sideUp,0)=1 (sideUp,1)=4 (sideUp,2)=4 (time,0)=10 (time,1)=20 (time,2)=1000
+SATISFIABLE
+
+Models       : 6
+Calls        : 1
+Time         : 0.048s   (Solving: 0.000s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.017s
+
+
+
+  real      0:00.42
+  real [s]  0.42
+  user [s]  0.22
+  sys  [s]  0.07
+  mem  [KB] 28404
+  avgm [KB] 0

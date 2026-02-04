@@ -1,0 +1,78 @@
+$ python ../hec-incr.py --maxtime 1000 --con ./model-state_constr-continuous.lp
+
+
+Looking for the right number of steps: 1 2 3 4 5 6 7 8 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.104s)
+maxStep(8)
+happens(check,25)
+happens(check,55)
+happens(arrive(nathan),30)
+happens(arrive(nathan),60)
+happens(letGoOf(nathan,book),40)
+happens(pickUp(nathan,book),10)
+happens(walk(nathan,100),20)
+happens(walk(nathan,200),50)
+holdsAt(walking(nathan),(20<T=<25))
+holdsAt(walking(nathan),(25<T=<30))
+holdsAt(walking(nathan),(50<T=<55))
+holdsAt(walking(nathan),(55<T=<60))
+holdsAt(holding(nathan,book),(10<T=<20))
+holdsAt(holding(nathan,book),(20<T=<25))
+holdsAt(holding(nathan,book),(25<T=<30))
+holdsAt(holding(nathan,book),(30<T=<40))
+releasedAt(location(book),(10<T=<20))
+releasedAt(location(book),(20<T=<25))
+releasedAt(location(book),(25<T=<30))
+releasedAt(location(book),(30<T=<40))
+releasedAt(location(nathan),(20<T=<25))
+releasedAt(location(nathan),(25<T=<30))
+releasedAt(location(nathan),(50<T=<55))
+releasedAt(location(nathan),(55<T=<60))
+fholdsAt(location(book)=0,(0<T=<10))
+fholdsAt(location(book)=0,(10<T=<20))
+fholdsAt(location(book)=50,(20<T=<25))
+fholdsAt(location(book)=100,(25<T=<30))
+fholdsAt(location(book)=100,(30<T=<40))
+fholdsAt(location(book)=100,(40<T=<50))
+fholdsAt(location(book)=100,(50<T=<55))
+fholdsAt(location(book)=100,(55<T=<60))
+fholdsAt(location(book)=100,(60<T=<1000))
+fholdsAt(location(nathan)=0,(0<T=<10))
+fholdsAt(location(nathan)=0,(10<T=<20))
+fholdsAt(location(nathan)=100,(30<T=<40))
+fholdsAt(location(nathan)=100,(40<T=<50))
+fholdsAt(location(nathan)=200,(60<T=<1000))
+fholdsAt(walkingTo(nathan)=0,(0<T=<10))
+fholdsAt(walkingTo(nathan)=0,(10<T=<20))
+fholdsAt(walkingTo(nathan)=100,(20<T=<25))
+fholdsAt(walkingTo(nathan)=100,(25<T=<30))
+fholdsAt(walkingTo(nathan)=0,(30<T=<40))
+fholdsAt(walkingTo(nathan)=0,(40<T=<50))
+fholdsAt(walkingTo(nathan)=200,(50<T=<55))
+fholdsAt(walkingTo(nathan)=200,(55<T=<60))
+fholdsAt(walkingTo(nathan)=0,(60<T=<1000))
+fholdsAtC(location(nathan)=(0->50),(20<T=<25),eq((((1,0),),10)))
+fholdsAtC(location(nathan)=(50->100),(25<T=<30),eq((((1,0),),10)))
+fholdsAtC(location(nathan)=(100->150),(50<T=<55),eq((((1,100),),10)))
+fholdsAtC(location(nathan)=(150->200),(55<T=<60),eq((((1,100),),10)))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=25 (time,3)=30 (time,4)=40 (time,5)=50 (time,6)=55 (time,7)=60 (time,8)=1000 (location(book),0)=0 (location(book),1)=0 (location(book),2)=50 (location(book),3)=100 (location(book),4)=100 (location(book),5)=100 (location(book),6)=100 (location(book),7)=100 (location(book),8)=100 (location(nathan),0)=0 (location(nathan),1)=0 (location(nathan),2)=50 (location(nathan),3)=100 (location(nathan),4)=100 (location(nathan),5)=100 (location(nathan),6)=150 (location(nathan),7)=200 (location(nathan),8)=200 (walkingTo(nathan),0)=0 (walkingTo(nathan),1)=0 (walkingTo(nathan),2)=100 (walkingTo(nathan),3)=100 (walkingTo(nathan),4)=0 (walkingTo(nathan),5)=0 (walkingTo(nathan),6)=200 (walkingTo(nathan),7)=200 (walkingTo(nathan),8)=0
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.106s (Solving: 0.01s 1st Model: 0.01s Unsat: 0.00s)
+CPU Time     : 0.081s
+
+
+Command exited with non-zero status 30
+
+  real      0:01.59
+  real [s]  1.59
+  user [s]  0.96
+  sys  [s]  0.29
+  mem  [KB] 26108
+  avgm [KB] 0

@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.049s)
+happens(close1,12) holdsAt(switch2,0) holdsAt(switch3,0) holdsAt(switch1,13) holdsAt(switch1,14) holdsAt(switch1,15) holdsAt(switch1,16) holdsAt(switch1,17) holdsAt(switch1,18) holdsAt(switch1,19) holdsAt(switch1,20) holdsAt(switch2,0) holdsAt(switch3,0) holdsAt(switch1,20) holdsAt(switch2,1) holdsAt(switch2,2) holdsAt(switch2,3) holdsAt(switch2,4) holdsAt(switch2,5) holdsAt(switch2,6) holdsAt(switch2,7) holdsAt(switch2,8) holdsAt(switch2,9) holdsAt(switch2,10) holdsAt(switch2,11) holdsAt(switch2,12) holdsAt(switch2,12) holdsAt(switch3,1) holdsAt(switch3,2) holdsAt(switch3,3) holdsAt(switch3,4) holdsAt(switch3,5) holdsAt(switch3,6) holdsAt(switch3,7) holdsAt(switch3,8) holdsAt(switch3,9) holdsAt(switch3,10) holdsAt(switch3,11) holdsAt(switch3,12) holdsAt(switch3,12) holdsAt(switch3,13) holdsAt(switch3,14) holdsAt(switch3,15) holdsAt(switch3,16) holdsAt(switch3,17) holdsAt(switch3,18) holdsAt(switch3,19) holdsAt(switch3,20) holdsAt(relay,13) holdsAt(relay,14) holdsAt(relay,15) holdsAt(relay,16) holdsAt(relay,17) holdsAt(relay,18) holdsAt(relay,19) holdsAt(relay,20) happens(closeRelay,12) happens(open2,12) holdsAt(switch3,20) holdsAt(relay,20)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.050s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.024s

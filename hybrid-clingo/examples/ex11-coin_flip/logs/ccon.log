@@ -1,0 +1,45 @@
+$ python ../hec-incr.py ./model.lp --maxtime 1000 --con
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.052s)
+maxStep(2)
+happens(land,20)
+happens(toss,10)
+holdsAt(up(heads),(0<T=<10))
+holdsAt(up(heads),(10<T=<20))
+holdsAt(up(heads),(20<T=<1000))
+releasedAt(up(heads),(10<T=<20))
+releasedAt(up(tails),(10<T=<20))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=1000
+Answer: 2 (Time: 0.053s)
+maxStep(2)
+happens(land,20)
+happens(toss,10)
+holdsAt(up(heads),(0<T=<10))
+holdsAt(up(tails),(10<T=<20))
+holdsAt(up(tails),(20<T=<1000))
+releasedAt(up(heads),(10<T=<20))
+releasedAt(up(tails),(10<T=<20))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=1000
+SATISFIABLE
+
+Models       : 2
+Calls        : 1
+Time         : 0.053s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.028s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.40
+  real [s]  0.40
+  user [s]  0.24
+  sys  [s]  0.06
+  mem  [KB] 21364
+  avgm [KB] 0

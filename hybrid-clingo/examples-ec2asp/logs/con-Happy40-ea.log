@@ -1,0 +1,32 @@
+$ python ../hec-incr.py --con ./Happy40-ea.lp
+
+
+Looking for the right number of steps: 1 FOUND
+clingcon version 5.2.1
+Reading from ...n/hybrid-clingo/axioms/hec-memb-con.lp ...
+Solving...
+Answer: 1 (Time: 0.050s)
+maxStep(1)
+happens(feed(fred),25)
+holdsAt(happy(fred),(25<T=<40))
+holdsAt(hungry(fred),(0<T=<25))
+releasedAt(happy(fred),(0<T=<25))
+releasedAt(happy(fred),(25<T=<40))
+Assignment:
+(time,0)=25 (time,1)=40
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.050s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.024s
+
+
+Command exited with non-zero status 30
+
+  real      0:00.25
+  real [s]  0.25
+  user [s]  0.12
+  sys  [s]  0.06
+  mem  [KB] 20992
+  avgm [KB] 0

@@ -1,0 +1,32 @@
+$ python ../hec-incr.py ./Supermarket12-ea.lp
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.048s)
+happens(pull,5)
+happens(pull,10)
+happens(push,5)
+happens(push,10)
+holdsAt(spinning,(5<T=<10))
+holdsAt(spinning,(10<T=<12))
+maxStep(2)
+Assignment:
+(time,0)=5 (time,1)=10 (time,2)=12
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.048s   (Solving: 0.000s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.017s
+
+
+
+  real      0:00.41
+  real [s]  0.41
+  user [s]  0.19
+  sys  [s]  0.08
+  mem  [KB] 28488
+  avgm [KB] 0

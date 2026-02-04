@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.162s)
+happens(tapOn,5) holdsAt(height(0),0) holdsAt(filling,6) holdsAt(height(0),0) holdsAt(filling,7) holdsAt(filling,8) holdsAt(filling,9) holdsAt(filling,10) holdsAt(filling,11) holdsAt(filling,12) holdsAt(filling,13) holdsAt(filling,14) holdsAt(filling,15) holdsAt(filling,16) holdsAt(filling,17) holdsAt(filling,18) holdsAt(filling,19) holdsAt(filling,20) holdsAt(spilling,21) holdsAt(spilling,22) holdsAt(spilling,23) holdsAt(spilling,24) holdsAt(spilling,25) holdsAt(height(0),1) holdsAt(height(0),2) holdsAt(height(0),3) holdsAt(height(0),4) holdsAt(height(0),5) holdsAt(height(0),5) holdsAt(height(1),6) holdsAt(height(2),7) holdsAt(height(3),8) holdsAt(height(4),9) holdsAt(height(5),10) holdsAt(height(6),11) holdsAt(height(7),12) holdsAt(height(8),13) holdsAt(height(9),14) holdsAt(height(10),15) holdsAt(height(11),16) holdsAt(height(12),17) holdsAt(height(13),18) holdsAt(height(14),19) holdsAt(height(15),20) holdsAt(height(15),21) holdsAt(height(15),22) holdsAt(height(15),23) holdsAt(height(15),24) holdsAt(height(15),25) happens(overflow,20) holdsAt(spilling,25) holdsAt(height(15),25) holdsAt(filling,20) holdsAt(height(15),20)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.163s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.147s

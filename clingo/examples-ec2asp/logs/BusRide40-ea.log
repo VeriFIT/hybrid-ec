@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.026s)
+happens(buy,24) happens(board,35) holdsAt(onRed,38) holdsAt(hasTicket,25) holdsAt(hasTicket,38) holdsAt(hasTicket,26) holdsAt(hasTicket,27) holdsAt(hasTicket,28) holdsAt(hasTicket,29) holdsAt(hasTicket,30) holdsAt(hasTicket,31) holdsAt(hasTicket,32) holdsAt(hasTicket,33) holdsAt(hasTicket,34) holdsAt(hasTicket,35) holdsAt(hasTicket,35) holdsAt(hasTicket,36) holdsAt(hasTicket,37) holdsAt(hasTicket,39) holdsAt(hasTicket,40) holdsAt(hasTicket,40) happens(boardRed,35) holdsAt(onRed,36) holdsAt(onRed,37) holdsAt(onRed,39) holdsAt(onRed,40) holdsAt(onRed,40)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.027s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.009s

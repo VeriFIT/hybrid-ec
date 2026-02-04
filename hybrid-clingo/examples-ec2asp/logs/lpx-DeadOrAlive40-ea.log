@@ -1,0 +1,53 @@
+$ python ../hec-incr.py ./DeadOrAlive40-ea.lp
+
+
+Looking for the right number of steps: 1 2 3 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.048s)
+-holdsAt(alive,(35<T=<40))
+-holdsAt(dead,(10<T=<20))
+-holdsAt(dead,(20<T=<35))
+-holdsAt(dead,(0<T=<10))
+-holdsAt(loaded,(35<T=<40))
+-holdsAt(loaded,(0<T=<10))
+-releasedAt(alive,(10<T=<20))
+-releasedAt(alive,(20<T=<35))
+-releasedAt(alive,(35<T=<40))
+-releasedAt(alive,(0<T=<10))
+-releasedAt(loaded,(10<T=<20))
+-releasedAt(loaded,(20<T=<35))
+-releasedAt(loaded,(35<T=<40))
+-releasedAt(loaded,(0<T=<10))
+happens(load,10)
+happens(shoot,35)
+happens(sneeze,20)
+holdsAt(alive,(10<T=<20))
+holdsAt(alive,(20<T=<35))
+holdsAt(alive,(0<T=<10))
+holdsAt(dead,(35<T=<40))
+holdsAt(loaded,(10<T=<20))
+holdsAt(loaded,(20<T=<35))
+maxStep(3)
+releasedAt(dead,(10<T=<20))
+releasedAt(dead,(20<T=<35))
+releasedAt(dead,(35<T=<40))
+releasedAt(dead,(0<T=<10))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=35 (time,3)=40
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.048s   (Solving: 0.000s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.017s
+
+
+
+  real      0:00.58
+  real [s]  0.58
+  user [s]  0.30
+  sys  [s]  0.09
+  mem  [KB] 28640
+  avgm [KB] 0

@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.047s)
+happens(park,20) holdsAt(carParked,21) happens(steal,22) holdsAt(carParked,22) holdsAt(carParked,22)
+SATISFIABLE
+
+Models       : 1+
+Calls        : 1
+Time         : 0.047s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.031s

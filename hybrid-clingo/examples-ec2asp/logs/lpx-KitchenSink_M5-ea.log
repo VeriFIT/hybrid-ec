@@ -1,0 +1,33 @@
+$ python ../hec-incr.py ./KitchenSink_M5-ea.lp
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.052s)
+fholdsAt(height=4,(4<T=<5))
+fholdsAtC(height=(0->4),(0<T=<4),eq((((1,0),),1)))
+happens(overflow,4)
+happens(tapOn,0)
+holdsAt(filling,(0<T=<4))
+holdsAt(spilling,(4<T=<5))
+maxStep(2)
+releasedAt(height,(0<T=<4))
+Assignment:
+(height,0)=0 (height,1)=4 (height,2)=4 (time,0)=0 (time,1)=4 (time,2)=5
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.052s   (Solving: 0.000s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.017s
+
+
+
+  real      0:00.41
+  real [s]  0.41
+  user [s]  0.19
+  sys  [s]  0.08
+  mem  [KB] 28616
+  avgm [KB] 0

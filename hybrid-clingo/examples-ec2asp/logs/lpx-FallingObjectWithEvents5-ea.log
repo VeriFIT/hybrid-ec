@@ -1,0 +1,32 @@
+$ python ../hec-incr.py ./FallingObjectWithEvents5-ea.lp
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.050s)
+fholdsAt(height(apple)=0,(3<T=<5))
+fholdsAtC(height(apple)=(3->0),(0<T=<3),eq((((1,3),),-1)))
+happens(drop(nathan,apple),0)
+happens(hitGround(apple),3)
+holdsAt(falling(apple),(0<T=<3))
+maxStep(2)
+releasedAt(height(apple),(0<T=<3))
+Assignment:
+(height(apple),0)=3 (height(apple),1)=0 (height(apple),2)=0 (time,0)=0 (time,1)=3 (time,2)=5
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.050s   (Solving: 0.000s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.018s
+
+
+
+  real      0:00.42
+  real [s]  0.42
+  user [s]  0.20
+  sys  [s]  0.09
+  mem  [KB] 28596
+  avgm [KB] 0

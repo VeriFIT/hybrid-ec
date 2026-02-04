@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.024s)
+happens(close1,0) holdsAt(switch2,0) holdsAt(switch3,0) holdsAt(switch1,1) holdsAt(relay,1) happens(closeRelay,0) happens(open2,0) holdsAt(switch1,1) holdsAt(relay,1) holdsAt(switch2,0) holdsAt(switch3,0) holdsAt(switch3,1) holdsAt(switch3,1)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.025s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.007s

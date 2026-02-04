@@ -1,0 +1,150 @@
+$ python ../hec-incr.py ./CoinToss40-ea.lp
+
+
+Looking for the right number of steps: 1 2 3 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.057s)
+happens(toss,10)
+happens(toss,20)
+happens(toss,30)
+holdsAt(heads,(0<T=<10))
+holdsAt(itsHeads,(30<T=<40))
+maxStep(3)
+releasedAt(itsHeads,(10<T=<20))
+releasedAt(itsHeads,(20<T=<30))
+releasedAt(itsHeads,(30<T=<40))
+releasedAt(itsHeads,(0<T=<10))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=30 (time,3)=40
+Answer: 2 (Time: 0.057s)
+happens(toss,10)
+happens(toss,20)
+happens(toss,30)
+holdsAt(heads,(30<T=<40))
+holdsAt(heads,(0<T=<10))
+holdsAt(itsHeads,(20<T=<30))
+holdsAt(itsHeads,(30<T=<40))
+maxStep(3)
+releasedAt(itsHeads,(10<T=<20))
+releasedAt(itsHeads,(20<T=<30))
+releasedAt(itsHeads,(30<T=<40))
+releasedAt(itsHeads,(0<T=<10))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=30 (time,3)=40
+Answer: 3 (Time: 0.057s)
+happens(toss,10)
+happens(toss,20)
+happens(toss,30)
+holdsAt(heads,(20<T=<30))
+holdsAt(heads,(0<T=<10))
+holdsAt(itsHeads,(10<T=<20))
+holdsAt(itsHeads,(30<T=<40))
+maxStep(3)
+releasedAt(itsHeads,(10<T=<20))
+releasedAt(itsHeads,(20<T=<30))
+releasedAt(itsHeads,(30<T=<40))
+releasedAt(itsHeads,(0<T=<10))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=30 (time,3)=40
+Answer: 4 (Time: 0.057s)
+happens(toss,10)
+happens(toss,20)
+happens(toss,30)
+holdsAt(heads,(20<T=<30))
+holdsAt(heads,(30<T=<40))
+holdsAt(heads,(0<T=<10))
+holdsAt(itsHeads,(10<T=<20))
+holdsAt(itsHeads,(20<T=<30))
+holdsAt(itsHeads,(30<T=<40))
+maxStep(3)
+releasedAt(itsHeads,(10<T=<20))
+releasedAt(itsHeads,(20<T=<30))
+releasedAt(itsHeads,(30<T=<40))
+releasedAt(itsHeads,(0<T=<10))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=30 (time,3)=40
+Answer: 5 (Time: 0.057s)
+happens(toss,10)
+happens(toss,20)
+happens(toss,30)
+holdsAt(heads,(10<T=<20))
+holdsAt(heads,(0<T=<10))
+holdsAt(itsHeads,(30<T=<40))
+holdsAt(itsHeads,(0<T=<10))
+maxStep(3)
+releasedAt(itsHeads,(10<T=<20))
+releasedAt(itsHeads,(20<T=<30))
+releasedAt(itsHeads,(30<T=<40))
+releasedAt(itsHeads,(0<T=<10))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=30 (time,3)=40
+Answer: 6 (Time: 0.057s)
+happens(toss,10)
+happens(toss,20)
+happens(toss,30)
+holdsAt(heads,(10<T=<20))
+holdsAt(heads,(20<T=<30))
+holdsAt(heads,(0<T=<10))
+holdsAt(itsHeads,(10<T=<20))
+holdsAt(itsHeads,(30<T=<40))
+holdsAt(itsHeads,(0<T=<10))
+maxStep(3)
+releasedAt(itsHeads,(10<T=<20))
+releasedAt(itsHeads,(20<T=<30))
+releasedAt(itsHeads,(30<T=<40))
+releasedAt(itsHeads,(0<T=<10))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=30 (time,3)=40
+Answer: 7 (Time: 0.057s)
+happens(toss,10)
+happens(toss,20)
+happens(toss,30)
+holdsAt(heads,(10<T=<20))
+holdsAt(heads,(30<T=<40))
+holdsAt(heads,(0<T=<10))
+holdsAt(itsHeads,(20<T=<30))
+holdsAt(itsHeads,(30<T=<40))
+holdsAt(itsHeads,(0<T=<10))
+maxStep(3)
+releasedAt(itsHeads,(10<T=<20))
+releasedAt(itsHeads,(20<T=<30))
+releasedAt(itsHeads,(30<T=<40))
+releasedAt(itsHeads,(0<T=<10))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=30 (time,3)=40
+Answer: 8 (Time: 0.057s)
+happens(toss,10)
+happens(toss,20)
+happens(toss,30)
+holdsAt(heads,(10<T=<20))
+holdsAt(heads,(20<T=<30))
+holdsAt(heads,(30<T=<40))
+holdsAt(heads,(0<T=<10))
+holdsAt(itsHeads,(10<T=<20))
+holdsAt(itsHeads,(20<T=<30))
+holdsAt(itsHeads,(30<T=<40))
+holdsAt(itsHeads,(0<T=<10))
+maxStep(3)
+releasedAt(itsHeads,(10<T=<20))
+releasedAt(itsHeads,(20<T=<30))
+releasedAt(itsHeads,(30<T=<40))
+releasedAt(itsHeads,(0<T=<10))
+Assignment:
+(time,0)=10 (time,1)=20 (time,2)=30 (time,3)=40
+SATISFIABLE
+
+Models       : 8
+Calls        : 1
+Time         : 0.057s   (Solving: 0.001s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.019s
+
+
+
+  real      0:00.59
+  real [s]  0.59
+  user [s]  0.28
+  sys  [s]  0.12
+  mem  [KB] 28544
+  avgm [KB] 0

@@ -1,0 +1,42 @@
+$ python ../hec-incr.py --maxtime 1000 ./model-effect_constr.lp
+
+
+Looking for the right number of steps: 1 2 3 4 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.062s)
+fholdsAt(location(book)=0,(0<T=<10))
+fholdsAt(location(book)=0,(10<T=<20))
+fholdsAt(location(book)=100,(20<T=<30))
+fholdsAt(location(book)=100,(30<T=<40))
+fholdsAt(location(book)=100,(40<T=<1000))
+fholdsAt(location(nathan)=0,(0<T=<10))
+fholdsAt(location(nathan)=0,(10<T=<20))
+fholdsAt(location(nathan)=100,(20<T=<30))
+fholdsAt(location(nathan)=100,(30<T=<40))
+fholdsAt(location(nathan)=200,(40<T=<1000))
+happens(letGoOf(nathan,book),30)
+happens(pickUp(nathan,book),10)
+happens(walk(nathan,100),20)
+happens(walk(nathan,200),40)
+holdsAt(holding(nathan,book),(10<T=<20))
+holdsAt(holding(nathan,book),(20<T=<30))
+maxStep(4)
+Assignment:
+(location(book),0)=0 (location(book),1)=0 (location(book),2)=100 (location(book),3)=100 (location(book),4)=100 (location(nathan),0)=0 (location(nathan),1)=0 (location(nathan),2)=100 (location(nathan),3)=100 (location(nathan),4)=200 (time,0)=10 (time,1)=20 (time,2)=30 (time,3)=40 (time,4)=1000
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.062s   (Solving: 0.001s 1st Model: 0.001s Unsat: 0.000s)
+CPU Time     : 0.022s
+
+
+
+  real      0:00.73
+  real [s]  0.73
+  user [s]  0.40
+  sys  [s]  0.11
+  mem  [KB] 28672
+  avgm [KB] 0

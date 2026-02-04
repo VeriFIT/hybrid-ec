@@ -1,0 +1,49 @@
+$ python ../hec-incr.py ./model.lp --maxtime 1000
+
+
+Looking for the right number of steps: 1 2 3 4 5 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.052s)
+fholdsAt(brightness=0,(0<T=<10))
+fholdsAt(brightness=0,(45<T=<1000))
+fholdsAtC(brightness=(0->10),(10<T=<20),eq((((1,0),),1)))
+fholdsAtC(brightness=(10->0),(20<T=<30),eq((((1,10),),-1)))
+fholdsAtC(brightness=(0->10),(30<T=<40),eq((((1,0),),1)))
+fholdsAtC(brightness=(10->5),(40<T=<45),eq((((1,10),),-1)))
+happens(fade_in_end,20)
+happens(fade_in_end,40)
+happens(fade_out_end,30)
+happens(turn_light_off,45)
+happens(turn_light_on,10)
+holdsAt(fading_in,(10<T=<20))
+holdsAt(fading_in,(30<T=<40))
+holdsAt(fading_out,(20<T=<30))
+holdsAt(fading_out,(40<T=<45))
+holdsAt(light_on,(10<T=<20))
+holdsAt(light_on,(20<T=<30))
+holdsAt(light_on,(30<T=<40))
+holdsAt(light_on,(40<T=<45))
+maxStep(5)
+releasedAt(brightness,(10<T=<20))
+releasedAt(brightness,(20<T=<30))
+releasedAt(brightness,(30<T=<40))
+releasedAt(brightness,(40<T=<45))
+Assignment:
+(brightness,0)=0 (brightness,1)=10 (brightness,2)=0 (brightness,3)=10 (brightness,4)=5 (brightness,5)=0 (time,0)=10 (time,1)=20 (time,2)=30 (time,3)=40 (time,4)=45 (time,5)=1000
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.052s   (Solving: 0.001s 1st Model: 0.001s Unsat: 0.000s)
+CPU Time     : 0.022s
+
+
+
+  real      0:00.90
+  real [s]  0.90
+  user [s]  0.48
+  sys  [s]  0.14
+  mem  [KB] 29004
+  avgm [KB] 0

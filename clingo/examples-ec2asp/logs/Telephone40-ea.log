@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.055s)
+happens(pickUp(agent1,phone1),0) happens(dial(agent1,phone1,phone2),8) happens(pickUp(agent2,phone2),32) holdsAt(idle(phone1),0) holdsAt(idle(phone2),0) holdsAt(dialTone(phone1),1) holdsAt(dialTone(phone1),2) holdsAt(dialTone(phone1),3) holdsAt(dialTone(phone1),4) holdsAt(dialTone(phone1),5) holdsAt(dialTone(phone1),6) holdsAt(dialTone(phone1),7) holdsAt(dialTone(phone1),8) holdsAt(dialTone(phone1),8) holdsAt(idle(phone1),0) holdsAt(idle(phone2),0) holdsAt(ringing(phone1,phone2),9) holdsAt(ringing(phone1,phone2),10) holdsAt(ringing(phone1,phone2),11) holdsAt(ringing(phone1,phone2),12) holdsAt(ringing(phone1,phone2),13) holdsAt(ringing(phone1,phone2),14) holdsAt(ringing(phone1,phone2),15) holdsAt(ringing(phone1,phone2),16) holdsAt(ringing(phone1,phone2),17) holdsAt(ringing(phone1,phone2),18) holdsAt(ringing(phone1,phone2),19) holdsAt(ringing(phone1,phone2),20) holdsAt(ringing(phone1,phone2),21) holdsAt(ringing(phone1,phone2),22) holdsAt(ringing(phone1,phone2),23) holdsAt(ringing(phone1,phone2),24) holdsAt(ringing(phone1,phone2),25) holdsAt(ringing(phone1,phone2),26) holdsAt(ringing(phone1,phone2),27) holdsAt(ringing(phone1,phone2),28) holdsAt(ringing(phone1,phone2),29) holdsAt(ringing(phone1,phone2),30) holdsAt(ringing(phone1,phone2),31) holdsAt(ringing(phone1,phone2),32) holdsAt(ringing(phone1,phone2),32) holdsAt(idle(phone2),1) holdsAt(idle(phone2),2) holdsAt(idle(phone2),3) holdsAt(idle(phone2),4) holdsAt(idle(phone2),5) holdsAt(idle(phone2),6) holdsAt(idle(phone2),7) holdsAt(idle(phone2),8) holdsAt(idle(phone2),8) holdsAt(connected(phone1,phone2),33) holdsAt(connected(phone1,phone2),34) holdsAt(connected(phone1,phone2),35) holdsAt(connected(phone1,phone2),36) holdsAt(connected(phone1,phone2),37) holdsAt(connected(phone1,phone2),38) holdsAt(connected(phone1,phone2),39) holdsAt(connected(phone1,phone2),40) holdsAt(connected(phone1,phone2),40)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.056s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.040s

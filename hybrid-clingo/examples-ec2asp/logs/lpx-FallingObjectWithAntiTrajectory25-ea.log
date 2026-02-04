@@ -1,0 +1,33 @@
+$ python ../hec-incr.py ./FallingObjectWithAntiTrajectory25-ea.lp
+
+
+Looking for the right number of steps: 1 2 FOUND
+clingo-lpx version 1.4.0
+Reading from ...n/hybrid-clingo/axioms/hec-memb-lpx.lp ...
+Solving...
+Answer: 1 (Time: 0.049s)
+fholdsAtC(height(apple)=(18->0),(0<T=<18),eq((((1,18),),-1)))
+fholdsAtC(height(apple)=(0->0),(18<T=<25),eq((((1,0),),0)))
+happens(drop(nathan,apple),0)
+happens(hitGround(apple),18)
+holdsAt(falling(apple),(0<T=<18))
+maxStep(2)
+releasedAt(height(apple),(0<T=<18))
+releasedAt(height(apple),(18<T=<25))
+Assignment:
+(height(apple),0)=18 (height(apple),1)=0 (height(apple),2)=0 (time,0)=0 (time,1)=18 (time,2)=25
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.049s   (Solving: 0.000s 1st Model: 0.000s Unsat: 0.000s)
+CPU Time     : 0.017s
+
+
+
+  real      0:00.42
+  real [s]  0.42
+  user [s]  0.20
+  sys  [s]  0.09
+  mem  [KB] 28660
+  avgm [KB] 0

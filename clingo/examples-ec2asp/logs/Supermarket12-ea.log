@@ -1,0 +1,11 @@
+clingo version 5.7.2
+Reading from ../axioms/dec_clingo.lp ...
+Solving...
+Answer: 1 (Time: 0.021s)
+happens(push,5) happens(pull,5) happens(pull,10) happens(push,10) holdsAt(spinning,6) holdsAt(spinning,11) holdsAt(spinning,7) holdsAt(spinning,8) holdsAt(spinning,9) holdsAt(spinning,10) holdsAt(spinning,10) holdsAt(spinning,12) holdsAt(spinning,12)
+SATISFIABLE
+
+Models       : 1
+Calls        : 1
+Time         : 0.021s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.006s

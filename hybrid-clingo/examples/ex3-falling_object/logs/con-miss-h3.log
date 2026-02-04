@@ -1,0 +1,12 @@
+$ python ../hec-incr.py --maxtime 1000 --con -c paramHeight=3 ./model.lp --maxstep 5
+
+
+Looking for the right number of steps: 1 2 3 4 5 MAXSTEP_REACHED
+
+
+  real      0:00.89
+  real [s]  0.89
+  user [s]  0.51
+  sys  [s]  0.14
+  mem  [KB] 21120
+  avgm [KB] 0
