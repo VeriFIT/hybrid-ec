@@ -177,31 +177,31 @@ sum(LE,geq,B) :- sum(LE,gt,B).
 :- obs(_,_,T1,T2), T1 < 0.
 :- obs(_,_,T1,T2), T2 > maxtime, not disable_laststep. % last step can be disabled
 
-% map(T,S): time T is mapped to state S
-%   map(T,S) :- obs(happens3,E,T), step(S), &sum{ (time,S) } = T.       % clingcon
-    map(T,S) :- obs(happens3,E,T,_), step(S), sum(( (1,(time,S)), ),eq,T). % clingo-lpx
-    map(T,S) :- obs(happens3,E,_,T), step(S), sum(( (1,(time,S)), ),eq,T). % clingo-lpx
-             :- obs(happens3,E,_,T), not map(T,_). 
-             :- obs(happens3,E,T,_), not map(T,_). 
-happens3(E,S1,S2) :- obs(happens3,E,T1,T2), map(T1,S1), map(T2,S2).
+% mapEventObs(T,S): time T is mapped to state S
+%mapEventObs(T,S) :- obs(happens3,E,T), step(S), &sum{ (time,S) } = T.          % clingcon
+ mapEventObs(T,S) :- obs(happens3,E,T,_), step(S), sum(( (1,(time,S)), ),eq,T). % clingo-lpx
+ mapEventObs(T,S) :- obs(happens3,E,_,T), step(S), sum(( (1,(time,S)), ),eq,T). % clingo-lpx
+                  :- obs(happens3,E,_,T), not mapEventObs(T,_). 
+                  :- obs(happens3,E,T,_), not mapEventObs(T,_). 
+happens3(E,S1,S2) :- obs(happens3,E,T1,T2), mapEventObs(T1,S1), mapEventObs(T2,S2).
 
-% time_step(T,S): time point T corresponds to step S 
+% mapObs(T,S): time point T corresponds to step S 
 %% clingcon
-%time_step(T,S) :- obs(O,_,T), O != happens, step(S), S > 0, &sum{ (time,S-1) } < T, &sum{ (time,S) } >= T. % (time,S-1) < T <= (time,S)
-%time_step(T,S) :- obs(O,_,T), O != happens,          S = 0,                         &sum{ (time,S) } >= T. %              T <= (time,S)
+%mapObs(T,S) :- obs(O,_,T), O != happens, step(S), S > 0, &sum{ (time,S-1) } < T, &sum{ (time,S) } >= T. % (time,S-1) < T <= (time,S)
+%mapObs(T,S) :- obs(O,_,T), O != happens,          S = 0,                         &sum{ (time,S) } >= T. %              T <= (time,S)
 % clingo-lpx
-time_step(T,S) :- obs(O,_,T), O != happens3, step(S), S > 0, sum(( (1,(time,S-1)), ),lt,T), sum(( (1,(time,S)), ),geq,T). % (time,S-1) < T <= (time,S)
-time_step(T,S) :- obs(O,_,T), O != happens3,          S = 0,                                sum(( (1,(time,S)), ),geq,T).           %              T <= (time,S)
-:- obs(O,_,T), O != happens3, not time_step(T, _).
+mapObs(T,S) :- obs(O,_,T), O != happens3, step(S), S > 0, sum(( (1,(time,S-1)), ),lt,T), sum(( (1,(time,S)), ),geq,T). % (time,S-1) < T <= (time,S)
+mapObs(T,S) :- obs(O,_,T), O != happens3,          S = 0,                                sum(( (1,(time,S)), ),geq,T).           %              T <= (time,S)
+:- obs(O,_,T), O != happens3, not mapObs(T, _).
 %time_step_obs((holdsAt;notHoldsAt;releasedAt;notReleasedAt)). % filter out happens and functional values
 
 % check Boolean fluents' observations
-:- obs(      holdsAt,F,T),  fluent(F), time_step(T,S), not holdsAt(F,S).
-:- obs(   notHoldsAt,F,T),  fluent(F), time_step(T,S),     holdsAt(F,S).
-:- obs(   releasedAt,F,T),  fluent(F), time_step(T,S), not releasedAt(F,S).
-:- obs(   releasedAt,F,T), ffluent(F), time_step(T,S), not releasedAt(F,S).
-:- obs(notReleasedAt,F,T),  fluent(F), time_step(T,S),     releasedAt(F,S).
-:- obs(notReleasedAt,F,T), ffluent(F), time_step(T,S),     releasedAt(F,S).
+:- obs(      holdsAt,F,T),  fluent(F), mapObs(T,S), not holdsAt(F,S).
+:- obs(   notHoldsAt,F,T),  fluent(F), mapObs(T,S),     holdsAt(F,S).
+:- obs(   releasedAt,F,T),  fluent(F), mapObs(T,S), not releasedAt(F,S).
+:- obs(   releasedAt,F,T), ffluent(F), mapObs(T,S), not releasedAt(F,S).
+:- obs(notReleasedAt,F,T),  fluent(F), mapObs(T,S),     releasedAt(F,S).
+:- obs(notReleasedAt,F,T), ffluent(F), mapObs(T,S),     releasedAt(F,S).
 
 % check functional fluents' observations
 % in_trajectory(F,S,C): F is at step S in a trajectory with time coefficient C
@@ -213,9 +213,9 @@ in_trajectory(F2,S2+S3,C) :-
   happens3(E,S1,S2), terminates(E,F1,S1), 0<S3,
   antiTrajectory(F1,S1,F2,(LE,C),S3), not startedIn(S1,F1,S2+S3), step(S2+S3).
 
-&sum{ (F,S) }                         = V :- obs(F,V,T), ffluent(F), time_step(T,S), not in_trajectory(F,S,_).
-%&sum{ (F,S); C*T; -C*(time,S) } = V :- obs(F,V,T), ffluent(F), time_step(T,S),     in_trajectory(F,S,C).  % clingcon
-&sum{ (F,S); C*T; -C*(time,S) } = V :- obs(F,V,T), ffluent(F), time_step(T,S),     in_trajectory(F,S,C).  % clingo-lpx 
+&sum{ (F,S) }                   = V :- obs(F,V,T), ffluent(F), mapObs(T,S), not in_trajectory(F,S,_).
+%&sum{ (F,S); C*T; -C*(time,S) } = V :- obs(F,V,T), ffluent(F), mapObs(T,S),     in_trajectory(F,S,C).  % clingcon
+&sum{ (F,S); C*T; -C*(time,S) } = V :- obs(F,V,T), ffluent(F), mapObs(T,S),     in_trajectory(F,S,C).  % clingo-lpx 
 
 % for clingo-lpx
 comparison(( (1,(time,S)), ),T) :- obs(_,_,T), step(S).
