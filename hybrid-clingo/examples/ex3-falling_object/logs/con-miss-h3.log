@@ -1,4 +1,4 @@
-$ python ../hec-incr.py --maxtime 1000 --con -c paramHeight=3 ./model.lp --maxstep 5
+$ python ../../hec-incr.py --maxtime 1000 --con -c paramHeight=3 ./model.lp --maxstep 5
 
 
 Looking for the right number of steps: 1 2 3 4 5 MAXSTEP_REACHED

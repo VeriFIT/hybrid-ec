@@ -3,11 +3,11 @@ TIME=/usr/bin/time -f "\n  real      %E\n  real [s]  %e\n  user [s]  %U\n  sys  
 
 #-----------------------------------------------------------------------------------------------------------------------
 # base
-LPX_CMD=python ../hec-incr.py ./model.lp --maxtime $$MAXTIME
-LPX_CMD_ZENO=python ../hec-incr.py ./model-zeno.lp --maxtime $$MAXTIME
+LPX_CMD=python ../../hec-incr.py ./model.lp --maxtime $$MAXTIME
+LPX_CMD_ZENO=python ../../hec-incr.py ./model-zeno.lp --maxtime $$MAXTIME
 #LPX_CMD_ZENO=python -m clingolpx --enable-python --strict -n10 ./model-zeno.lp ../axioms/hec.lp ../axioms/hec-show.lp -c maxstep=$$MAXSTEP -c maxtime=$$MAXTIME
-CON_CMD=python ../hec-incr.py ./model-con.lp --maxtime $$MAXTIME --con
-CON_CMD_ZENO=python ../hec-incr.py ./model-zeno.lp --maxtime $$MAXTIME --con 
+CON_CMD=python ../../hec-incr.py ./model-con.lp --maxtime $$MAXTIME --con
+CON_CMD_ZENO=python ../../hec-incr.py ./model-zeno.lp --maxtime $$MAXTIME --con 
 #CON_CMD_ZENO=python -m clingcon --enable-python -n10 ./model-zeno.lp ../axioms/hec.lp ../axioms/hec-show.lp -c maxstep=$$MAXSTEP -c maxtime=$$MAXTIME
 
 run-lpx:

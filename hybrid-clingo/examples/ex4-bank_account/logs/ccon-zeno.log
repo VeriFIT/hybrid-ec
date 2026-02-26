@@ -1,4 +1,4 @@
-$ python ../hec-incr.py ./model-zeno.lp --maxtime 1000 --con  --project
+$ python ../../hec-incr.py ./model-zeno.lp --maxtime 1000 --con  --project
 
 
 Looking for the right number of steps: 1 2 3 4 FOUND

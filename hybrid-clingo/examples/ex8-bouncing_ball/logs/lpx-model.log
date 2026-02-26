@@ -1,4 +1,4 @@
-$ python ../hec-incr.py --maxtime 1000 ./model.lp ./narrative1.lp
+$ python ../../hec-incr.py --maxtime 1000 ./model.lp ./narrative1.lp
 
 
 Looking for the right number of steps: 1 2 3 4 5 6 FOUND

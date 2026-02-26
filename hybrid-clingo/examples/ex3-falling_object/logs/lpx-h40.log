@@ -1,4 +1,4 @@
-$ python ../hec-incr.py --maxtime 1000 -c paramHeight=40 ./model.lp
+$ python ../../hec-incr.py --maxtime 1000 -c paramHeight=40 ./model.lp
 
 
 Looking for the right number of steps: 1 2 FOUND

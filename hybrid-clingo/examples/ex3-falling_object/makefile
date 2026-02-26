@@ -3,8 +3,8 @@ TIME=/usr/bin/time -f "\n  real      %E\n  real [s]  %e\n  user [s]  %U\n  sys  
 
 #-----------------------------------------------------------------------------------------------------------------------
 # base
-LPX_CMD=python ../hec-incr.py --maxtime $$MAXTIME -c paramHeight=$$HEIGHT ./model.lp
-CON_CMD=python ../hec-incr.py --maxtime $$MAXTIME --con -c paramHeight=$$HEIGHT ./model.lp
+LPX_CMD=python ../../hec-incr.py --maxtime $$MAXTIME -c paramHeight=$$HEIGHT ./model.lp
+CON_CMD=python ../../hec-incr.py --maxtime $$MAXTIME --con -c paramHeight=$$HEIGHT ./model.lp
 
 run-lpx:
 	MAXTIME=1000; HEIGHT=20; ${TIME} ${LPX_CMD}

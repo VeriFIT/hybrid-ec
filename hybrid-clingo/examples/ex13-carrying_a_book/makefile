@@ -3,8 +3,8 @@ TIME=/usr/bin/time -f "\n  real      %E\n  real [s]  %e\n  user [s]  %U\n  sys  
 
 #-----------------------------------------------------------------------------------------------------------------------
 # base
-LPX_CMD=python ../hec-incr.py --maxtime $$MAXTIME
-CON_CMD=python ../hec-incr.py --maxtime $$MAXTIME --con
+LPX_CMD=python ../../hec-incr.py --maxtime $$MAXTIME
+CON_CMD=python ../../hec-incr.py --maxtime $$MAXTIME --con
 
 run-lpx-effect:
 	MAXTIME=1000; ${TIME} ${LPX_CMD} ./model-effect_constr.lp

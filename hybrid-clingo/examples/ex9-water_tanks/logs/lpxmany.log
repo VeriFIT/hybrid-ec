@@ -1,4 +1,4 @@
-$ python ../hec-incr.py --maxtime 1000 ./model.lp --no_last_step --keep_going --minstep 8 --maxstep 10
+$ python ../../hec-incr.py --maxtime 1000 ./model.lp --no_last_step --keep_going --minstep 8 --maxstep 10
 
 
 Looking for the right number of steps: 8 FOUND

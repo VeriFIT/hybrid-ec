@@ -34,20 +34,20 @@ startedIn(S1,F,S2) :-
 %   V for (rational) Variable
 
 % HEC3 only for functional fluents (replaced DEC3)
-&sum{ C*V : @member(LE) = (C,V); CC*(time,S1+S2); -CC*(time,S1) } = (F2,S1+S2) :-
+&sum{ C*V : @member(LE) = (C,V); R*(time,S1+S2); -R*(time,S1) } = (F2,S1+S2) :-
   happens(E,S1),
   initiates(E,F1,S1),
   0<S2,
-  trajectory(F1,S1,F2,(LE,CC),S2),
+  trajectory(F1,S1,F2,(LE,R),S2),
   not stoppedIn(S1,F1,S1+S2),
   step(S1+S2).
 
 % HEC4 only for functional fluents (replaced DEC4)
-&sum{ C*V : @member(LE) = (C,V); CC*(time,S1+S2); -CC*(time,S1) } = (F2,S1+S2) :-
+&sum{ C*V : @member(LE) = (C,V); R*(time,S1+S2); -R*(time,S1) } = (F2,S1+S2) :-
   happens(E,S1),
   terminates(E,F1,S1),
   0<S2,
-  antiTrajectory(F1,S1,F2,(LE,CC),S2),
+  antiTrajectory(F1,S1,F2,(LE,R),S2),
   not startedIn(S1,F1,S1+S2),
   step(S1+S2).
 

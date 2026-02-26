@@ -1,4 +1,4 @@
-$ python ../hec-incr.py ./model-con.lp --maxtime 1000 --con 		
+$ python ../../hec-incr.py ./model-con.lp --maxtime 1000 --con 		
 
 
 Looking for the right number of steps: 1 2 3 4 5 FOUND
